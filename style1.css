@@ -1,0 +1,12 @@
+body {
+	max-width: 900px;
+	margin: auto;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 1rem;
+}
