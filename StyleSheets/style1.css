@@ -58,9 +58,42 @@ h1 {
  }
 
 p {
-	font-size: 1.25rem;
+	font-size: 1rem;
 	line-height: 2.5rem;
 	margin-bottom: 2rem;
+}
+
+/* GRID CONTAINER */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 70% 30%;
+	gap: 20px;
+}
+
+.first-article {
+	grid-column: 1;
+	background-color: #181818;
+}
+
+.blank-div {
+	grid-column: 2; 
+	grid-row: 1; 
+	height: 40%;
+	background-color: #181818;
+}
+
+.div-quote {
+	grid-column: 2;
+	grid-row: 2; 
+	height: 60%; 
+	padding: 20px;
+	background-color: #181818;
+}
+
+div, article {
+	border-radius: 1rem;
+	padding: 1rem
 }
 
 footer {
