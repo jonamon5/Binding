@@ -5,6 +5,19 @@
 	font-style: normal;
 	background-color: black;
 }
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #181818;
+	padding: 1rem;
+	width: 100vw;
+	position: fixed;
+	left: 0;
+	top: 0;
+	font-weight: 500;
+}
+
 body {
 	max-width: 90%;
 	margin: auto;
@@ -12,12 +25,7 @@ body {
 	margin-bottom: 3rem;
 	color: white;
 }
-nav {
-	display: flex;
-	justify-content: space-evenly;
-	background-color: #181818;
-	padding: 1rem;
-}
+
 header {
 	margin-bottom: 3rem;
 	display: flex;
@@ -35,7 +43,7 @@ header {
 .author {
 	font-weight: 600;
 	color: #86868B;
-	margin-bottom: 0;
+	margin-bottom: 2rem;
 }
 
 .down-arrow {
