@@ -1,9 +1,42 @@
-body {
+.body-content {
 	max-width: 900px;
 	margin: auto;
-	margin-top: 3rem;
 	margin-bottom: 3rem;
-	color: blue;
+	margin-top: 3rem;
+	color: black;
+}
+.background-div {
+    padding: 4rem;
+    color: white;
+	text-align: center;
+    overflow: hidden; 
+    background-color: #61BFFE;
+	border-radius: 0 0 50% 50% / 0 0 20% 20%;
+}
+
+header {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #4E65FF;
+	color: white;
+	padding: 1rem;
+	width: 100vw;
+	position: fixed;
+	left: 0;
+	top: 0;
+	font-weight: 500;
+}
+
+.elisha {
+	background-color: #5EF49C;;
 }
 
 h1 {
