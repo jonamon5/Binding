@@ -25,6 +25,7 @@ header {
 	font-style: normal;
 }
 nav {
+	font-family: "Nunito", sans-serif;
 	display: flex;
 	justify-content: space-evenly;
 	background-color: #4E65FF;

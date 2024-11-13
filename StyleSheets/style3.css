@@ -1,28 +1,68 @@
 body {
+	font-family: "neue-kabel", sans-serif;
+	color: #FF5918;
+}
+.body-content {
 	max-width: 900px;
 	margin: auto;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
 	color: black;
+	font-weight: 400;
+	font-style: normal;
+	font-family: "inter", sans-serif;
 }
+
 
 nav {
 	display: flex;
 	justify-content: space-evenly;
-	background-color: #181818;
+	background-color: white;
+	align-items: center;
 	padding: 1rem;
 	width: 100vw;
-	position: fixed;
+	position: sticky;
 	left: 0;
 	top: 0;
 	font-weight: 500;
-	color: white;
 }
 
+nav > a:nth-child(1) {
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 3rem;
+}
+
+.navbar > a {
+	padding: 1rem 2rem 1rem 2rem;
+	border: 2px solid #FF5918;
+	border-radius: 1rem;
+}
+
+header {
+	margin: 5rem;
+}
 
 h1 {
-	font-size: 4rem;
+	font-size: 3rem;
+	color: #86868B;
 }
+
+.dilemma {
+	font-size: 10rem;
+	color: #FF5918;
+}
+
+
+span {
+	font-size: 3rem;
+	color: #86868B;
+}
+
+
  h2 {
 	font-size: 2rem;
 	margin-bottom: 1rem;
@@ -31,6 +71,7 @@ h1 {
 p {
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
+	color: black;
 }
 
 footer {
