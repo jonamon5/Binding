@@ -1,3 +1,7 @@
+html {
+	background-color: #FAF5F5;
+}
+
 body {
 	font-family: "neue-kabel", sans-serif;
 	color: #FF5918;
@@ -44,6 +48,7 @@ nav > a:nth-child(1) {
 
 header {
 	margin: 5rem;
+	height: 100vh;
 }
 
 h1 {
