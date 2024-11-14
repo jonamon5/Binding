@@ -59,6 +59,7 @@ h1 {
 	margin-bottom: 1rem;
 	margin-top: 4rem;
 	font-weight: 600;
+	position: sticky;
  }
 
  h3 {
@@ -138,7 +139,7 @@ section {
 }
 
 .magic {
-	font-size: 4.5rem;
+	font-size: 3.5rem;
 	font-weight: 800;
 	text-shadow: 0px 0px 40px #FFF;
 	margin-top: 2rem;
@@ -195,4 +196,32 @@ section {
 }
 footer {
 	color: white;
+}
+
+/* SCREEN SMALLER THAN 700PX */
+@media (max-width: 700px) {
+    .grid-container, .grid-container-left {
+        grid-template-columns: 1fr; 
+    }
+    .side-div, .side-div-left, .right-article, .left-article {
+        grid-column: 1; 
+    }
+	.blank-div {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 5rem;
+	}
+}
+
+@media (max-width: 450px) {
+	h1 {
+		font-size: 4rem;
+	}
+	p {
+		line-height: 2rem;
+	}
 }
