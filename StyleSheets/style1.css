@@ -220,11 +220,11 @@ footer {
 		top: 6%;
 		z-index: 1;
 	}
-	section:has(h2:sticky) h2 {
+	section:has(position:sticky) h2 {
 		background-color: #1FAF98;
 		color: blue;
 		border: 1px solid yellow;
-		padding: 0.5rem;
+		padding: 10rem;
 	}
 }
 
