@@ -29,7 +29,8 @@ nav {
 	top: 0;
 	font-weight: 500;
 	background-color: var(--dark-gray);
-	transition: var(--transition)
+	transition: var(--transition);
+	z-index: 100;
 }
 .content-wrapper {
 	padding-bottom: 1rem;
@@ -95,7 +96,7 @@ h1 {
 	margin-bottom: 1rem;
 	margin-top: 4rem;
 	font-weight: 600;
-	position: sticky;
+	/* position: sticky; */
  }
 
  h3 {
@@ -128,7 +129,7 @@ section {
 /* RIGHT CONTAINER */
 .grid-container {
 	display: grid;
-	grid-template-columns: 70% 30%;
+	grid-template-columns: 65% 35%;
 	grid-template-rows: 2fr;
 	gap: 20px;
 }
@@ -322,8 +323,8 @@ footer p {
 }
 
 
-/* SCREEN SMALLER THAN 700PX */
-@media (max-width: 700px) {
+/* SCREEN SMALLER THAN 800PX */
+@media (max-width: 800px) {
     .grid-container, .grid-container-left {
         grid-template-columns: 1fr; 
     }
@@ -336,14 +337,13 @@ footer p {
 	section > h2 {
 		text-align: center;
 		position: sticky;
-		top: 6%;
+		top: 9%;
 		z-index: 1;
+		padding: 1rem;
+		backdrop-filter: blur(10px);
 	}
-	section:has(position:sticky) h2 {
-		background-color: #1FAF98;
-		color: blue;
-		border: 1px solid yellow;
-		padding: 10rem;
+	nav {
+		padding: 2rem;
 	}
 }
 
