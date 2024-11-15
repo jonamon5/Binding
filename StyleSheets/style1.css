@@ -6,6 +6,7 @@
 
 :root {
 	--transition: background-color 0.5s ease-in-out, color 0.4s ease-in-out;
+	--transform: transform 1s ease-in-out;
 
 	--dark-gray: #181818;
 	--light-gray: #86868B;
@@ -162,14 +163,19 @@ section {
 	margin: 0;
 }
 
+
 .magic {
-	font-size: 3.5rem;
+	font-size: 1rem;
 	font-weight: 800;
 	text-shadow: 0px 0px 40px var(--white);
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	transition: var(--transform)
 }
 
+section:hover .magic {
+	transform: scale(3);
+}
 
 .modern {
 	font-size: 1.5rem;
@@ -250,7 +256,7 @@ section {
 .mode-toggle-button::before {
     content: "☀️";
 	position: absolute;
-	transition: transform 0.5s ease-in-out;
+	transition: var(--transform)
 }
 
 .mode-toggle-checkbox:checked + .mode-toggle-button::before {
