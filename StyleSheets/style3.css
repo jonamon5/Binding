@@ -48,7 +48,7 @@ nav > a:nth-child(1) {
 
 header {
 	margin: 5rem;
-	height: 90vh;
+	/* height: 80vh; */
 }
 
 h1 {
@@ -57,7 +57,7 @@ h1 {
 }
 
 .dilemma {
-	font-size: 10rem;
+	font-size: 8rem;
 	font-weight: bold;
 	color: #FF5918;
 	margin-bottom: 1rem;
@@ -84,6 +84,13 @@ p {
 	line-height: 2.5rem;
 }
 
+section:has(p) {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+/* INTRO SECTION */
+
 .save-world {
 	font-weight: bold;
 	font-size: 2rem;
@@ -105,17 +112,55 @@ color: #86868B;
 	margin-bottom: 1rem;
 }
 
+/* CAPLAN SECTION - BLACK WHITE*/
 
-.caplan-article {
+.caplan-section, .cities-section, .alone-section {
 	background-color: black;
-	color: white;
-	padding: 1rem;
+	padding: 5rem;
 	width: 100vw;
 	margin-left: calc(50% - 50vw);
 }
 
+.caplan-section p, .alone-section p {
+	color: white;
+}
+
+.caplan-article, .alone-article {
+	max-width: 900px;
+	margin: auto;
+}
+
 .caplan {
 	font-size: 3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: normal;
+}
+
+.differently {
+	color: #FF5918;
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* CITIES SECTION - BLACK ORANGE */
+
+.cities-article > p {
+	color:#FF5918;
+	text-transform: uppercase;
+	font-size: 3rem;
+	line-height: normal;
+}
+.cities-article {
+	max-width: 900px;
+	margin: auto;
+}
+
+/* ALONE SECTION - BLACK WHITE */
+
+.alone {
+	font-size: 7rem;
+	font-weight: bold;
 	text-transform: uppercase;
 	line-height: normal;
 }
@@ -123,6 +168,17 @@ color: #86868B;
 footer {
 	background-color: black;
 	color: white;
-	padding: 1rem;
+	padding: 5rem;
 	margin-top: 5rem;
+	height: 5%;
+}
+
+footer p {
+	color: white;
+	margin: 0;
+}
+
+.footer {
+	max-width: 900px;
+	margin: auto;
 }
