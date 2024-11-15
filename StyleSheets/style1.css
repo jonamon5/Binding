@@ -15,9 +15,12 @@ nav {
 	top: 0;
 	font-weight: 500;
 }
+.wrapper-wrapper {
+	max-width: 90%;
+	margin: auto;
+}
 
 body {
-	max-width: 90%;
 	margin: auto;
 	margin-top: 3rem;
 	margin-bottom: 3rem;
@@ -201,7 +204,6 @@ section {
     display: none;
 }
 
-/* Style the toggle button */
 .mode-toggle-button {
     position: fixed;
     bottom: 2rem;
@@ -210,12 +212,12 @@ section {
     cursor: pointer;
 }
 
-
-/* Light Mode Styles (when checkbox is checked) */
 .mode-toggle-checkbox:checked ~ .content-wrapper {
     background-color: white;
     color: black;
 }
+
+
 
 /* FOOTER */
 footer {
