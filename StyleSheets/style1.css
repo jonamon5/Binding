@@ -197,6 +197,25 @@ section {
 }
 
 /* LIGHT AND DARK MODE */
+.mode-toggle-checkbox {
+    display: none;
+}
+
+/* Style the toggle button */
+.mode-toggle-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* Light Mode Styles (when checkbox is checked) */
+.mode-toggle-checkbox:checked ~ .content-wrapper {
+    background-color: white;
+    color: black;
+}
 
 /* FOOTER */
 footer {
