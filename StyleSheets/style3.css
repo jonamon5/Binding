@@ -48,7 +48,7 @@ nav > a:nth-child(1) {
 
 header {
 	margin: 5rem;
-	height: 100vh;
+	height: 90vh;
 }
 
 h1 {
@@ -58,13 +58,17 @@ h1 {
 
 .dilemma {
 	font-size: 10rem;
+	font-weight: bold;
 	color: #FF5918;
+	margin-bottom: 1rem;
+	margin-top: 10rem;
 }
 
 
-span {
+.subtitle {
 	font-size: 3rem;
 	color: #86868B;
+	font-weight: 100;
 }
 
 
@@ -75,12 +79,50 @@ span {
 
 p {
 	font-size: 1.5rem;
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
 	color: black;
+	line-height: 2.5rem;
+}
+
+.save-world {
+	font-weight: bold;
+	font-size: 2rem;
+	color: #FF5918;
+}
+
+.in-this-book {
+color: #86868B;
+}
+
+.book-title {
+	font-size: 3rem;
+	color: #FF5918;
+	text-transform: uppercase;
+	line-height: normal;
+}
+
+.book-article > p {
+	margin-bottom: 1rem;
+}
+
+
+.caplan-article {
+	background-color: black;
+	color: white;
+	padding: 1rem;
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+}
+
+.caplan {
+	font-size: 3rem;
+	text-transform: uppercase;
+	line-height: normal;
 }
 
 footer {
 	background-color: black;
 	color: white;
 	padding: 1rem;
+	margin-top: 5rem;
 }
