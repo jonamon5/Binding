@@ -165,24 +165,6 @@ section {
 	margin-bottom: 2rem;
 }
 
-.capital {
-	font-size: 2rem;
-	font-weight: 800;
-	margin: 1rem;
-	background: linear-gradient(90deg, #D6145B 0%, #FBB03B 100%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-.consumer {
-	font-size: 2rem;
-	font-weight: 800;
-	margin: 1rem;
-	background: linear-gradient(90deg, #1FAF98 0%, #D9B5FF 100%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
 
 .modern {
 	font-size: 1.5rem;
@@ -193,26 +175,41 @@ section {
 }
 
 
-.impetus {
-	font-size: 1.75rem;
+.capital, .consumer, .material, .impetus {
+	font-size: 2rem;
 	font-weight: 800;
 	margin: 1rem;
-	line-height: 2rem;
-	background: linear-gradient(90deg, #4E65FF 0%, #92EFFE 100%);
+}
+
+.capital {
+	background: linear-gradient(90deg, #D6145B 0%, #FBB03B 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.consumer {
+	background: linear-gradient(90deg, #1FAF98 0%, #D9B5FF 100%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .material {
-	font-size: 2rem;
-	font-weight: 800;
-	margin: 1rem;
 	background: linear-gradient(90deg, #A890FE 0%, #EB8D8D 100%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+.impetus {
+	line-height: 2.5rem;
+	background: linear-gradient(90deg, #4E65FF 0%, #92EFFE 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 
 /* LIGHT AND DARK MODE */
 .mode-toggle-checkbox {
@@ -221,10 +218,11 @@ section {
 
 .mode-toggle-button {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    font-size: 2rem;
+    bottom: 5rem;
+    right: 5rem;
+    font-size: 3rem;
     cursor: pointer;
+
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper {
@@ -244,23 +242,31 @@ section {
     color: black;
 }
 
+.mode-toggle-button::before {
+    content: "☀️";
+	position: absolute;
+	transition: transform 0.5s ease-in-out;
+}
+
+.mode-toggle-checkbox:checked + .mode-toggle-button::before {
+    content: "🌙";
+	transform: rotate(360deg);
+}
+
 /* FOOTER */
 footer {
 	color: white;
 	background-color: black;
 	height: 7rem;
-	display: block;
+	display: grid;
 	align-content: center;
+	justify-content: center;
 }
 
 footer p {
 	margin: 0;
 }
 
-.footer {
-	max-width: 900px;
-	margin: auto;
-}
 
 /* SCREEN SMALLER THAN 700PX */
 @media (max-width: 700px) {
@@ -287,17 +293,23 @@ footer p {
 	}
 }
 
+/* 600 */
 @media (max-width: 600px) {
 	h1 {
 		font-size: 5rem;
 	}
 }
 
+/* 450 */
 @media (max-width: 450px) {
 	h1 {
 		font-size: 4rem;
 	}
 	p {
 		line-height: 2rem;
+	}
+	.footer {
+		width: 50vw;
+		text-align: center;
 	}
 }
