@@ -7,6 +7,7 @@
 :root {
 	--transition: background-color 0.5s ease-in-out, color 0.4s ease-in-out;
 	--transform: transform 1s ease-in-out;
+	--text-shadow: 0px 0px 40px var(--white);
 
 	--dark-gray: #181818;
 	--light-gray: #86868B;
@@ -45,7 +46,15 @@ body {
 	margin: auto;
 	margin-top: 3rem;
 	color: var(--white)
-	/* background-color: black; */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
 }
 
 header {
@@ -56,10 +65,14 @@ header {
 	text-align: center;
 	height: 110vh;
 	justify-content: space-evenly;
+
+	   animation: fadeIn 3s       ease-in-out     0.5s;
+	/* animation: name   duration timing-function delay iteration-count direction fill-mode; */
+
 }
 
 .header > h1 {
-	text-shadow: 0px 0px 40px var(--white)
+	text-shadow: var(--text-shadow);
 }
 
 .author {
@@ -161,16 +174,21 @@ section {
 .quote-div {
 	font-weight: 500;
 	margin: 0;
+	text-shadow: 0px 0px 0px transparent; 
+    transition: text-shadow 0.5s ease-in-out;
 }
 
+section:hover .quote-div {
+    text-shadow: var(--text-shadow)
+}
 
 .magic {
 	font-size: 1rem;
 	font-weight: 800;
-	text-shadow: 0px 0px 40px var(--white);
+	text-shadow: var(--text-shadow);
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	transition: var(--transform)
+	transition: var(--transform);
 }
 
 section:hover .magic {
@@ -180,7 +198,7 @@ section:hover .magic {
 .modern {
 	font-size: 1.5rem;
 	font-weight: 800;
-	text-shadow: 0px 0px 40px var(--white);
+	text-shadow: var(--text-shadow);
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
@@ -197,6 +215,12 @@ section:hover .magic {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-size: 1rem;
+	transition: var(--transform);
+}
+
+section:hover .capital {
+	transform: scale(2.5);
 }
 
 .consumer {
@@ -204,6 +228,12 @@ section:hover .magic {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-size: 1rem;
+	transition: var(--transform);
+}
+
+section:hover .consumer {
+	transform: scale(2.5);
 }
 
 .material {
@@ -211,6 +241,12 @@ section:hover .magic {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-size: 1rem;
+	transition: var(--transform);
+}
+
+section:hover .material {
+	transform: scale(2.5);
 }
 
 .impetus {
@@ -220,6 +256,7 @@ section:hover .magic {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
 
 
 /* LIGHT AND DARK MODE */
