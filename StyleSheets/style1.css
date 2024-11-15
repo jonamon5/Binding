@@ -15,6 +15,11 @@ nav {
 	top: 0;
 	font-weight: 500;
 }
+.content-wrapper {
+	background-color: black;
+	padding-bottom: 1rem;
+}
+
 .wrapper-wrapper {
 	max-width: 90%;
 	margin: auto;
@@ -23,9 +28,8 @@ nav {
 body {
 	margin: auto;
 	margin-top: 3rem;
-	margin-bottom: 3rem;
 	color: white;
-	background-color: black;
+	/* background-color: black; */
 }
 
 header {
@@ -217,11 +221,34 @@ section {
     color: black;
 }
 
+.mode-toggle-checkbox:checked ~ .content-wrapper nav {
+    background-color: #333333;
+    color: white;
+}
 
+.mode-toggle-checkbox:checked ~ .content-wrapper .blank-div,
+.mode-toggle-checkbox:checked ~ .content-wrapper .quote-div-container,
+.mode-toggle-checkbox:checked ~ .content-wrapper article {
+    background-color: #e0e0e0;
+    color: black;
+}
 
 /* FOOTER */
 footer {
 	color: white;
+	background-color: black;
+	height: 7rem;
+	display: block;
+	align-content: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+.footer {
+	max-width: 900px;
+	margin: auto;
 }
 
 /* SCREEN SMALLER THAN 700PX */
