@@ -6,10 +6,15 @@
 
 :root {
 	--transition: background-color 0.5s ease-in-out, color 0.4s ease-in-out;
+
 	--dark-gray: #181818;
 	--light-gray: #86868B;
 	--black: #000000;
 	--white: #FFFFFF;
+	--light-grey-box: #e0e0e0;
+
+	--p-font: 1rem;
+	--p-height: 1.75rem;
 }
 
 nav {
@@ -21,12 +26,12 @@ nav {
 	left: 0;
 	top: 0;
 	font-weight: 500;
-	background-color: #181818;
+	background-color: var(--dark-gray);
 	transition: var(--transition)
 }
 .content-wrapper {
 	padding-bottom: 1rem;
-	background-color: black;
+	background-color: var(--black);
 	transition: var(--transition)
 }
 
@@ -38,7 +43,7 @@ nav {
 body {
 	margin: auto;
 	margin-top: 3rem;
-	color: white;
+	color: var(--white)
 	/* background-color: black; */
 }
 
@@ -53,12 +58,12 @@ header {
 }
 
 .header > h1 {
-	text-shadow: 0px 0px 40px #FFF;
+	text-shadow: 0px 0px 40px var(--white)
 }
 
 .author {
 	font-weight: 600;
-	color: #86868B;
+	color: var(--light-gray);
 	margin-bottom: 2rem;
 }
 
@@ -84,8 +89,8 @@ h1 {
  }
 
 p {
-	font-size: 1rem;
-	line-height: 1.75rem;
+	font-size: var(--p-font);
+	line-height: var(--p-height);
 	margin-bottom: 2rem;
 }
 
@@ -149,7 +154,7 @@ section {
 .blank-div, .quote-div-container, article {
 	border-radius: 1rem;
 	padding: 1.5rem;
-	background-color: #181818;
+	background-color: var(--dark-gray);
 	transition: var(--transition)
 }
 .quote-div {
@@ -160,7 +165,7 @@ section {
 .magic {
 	font-size: 3.5rem;
 	font-weight: 800;
-	text-shadow: 0px 0px 40px #FFF;
+	text-shadow: 0px 0px 40px var(--white);
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
@@ -169,7 +174,7 @@ section {
 .modern {
 	font-size: 1.5rem;
 	font-weight: 800;
-	text-shadow: 0px 0px 40px #FFF;
+	text-shadow: 0px 0px 40px var(--white);
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
@@ -226,20 +231,20 @@ section {
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper {
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black)
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper nav {
     background-color: #333333;
-    color: white;
+    color: var(--white);
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper .blank-div,
 .mode-toggle-checkbox:checked ~ .content-wrapper .quote-div-container,
 .mode-toggle-checkbox:checked ~ .content-wrapper article {
-    background-color: #e0e0e0;
-    color: black;
+    background-color: var(--light-grey-box);
+    color: var(--black);
 }
 
 .mode-toggle-button::before {
@@ -255,8 +260,8 @@ section {
 
 /* FOOTER */
 footer {
-	color: white;
-	background-color: black;
+	color: var(--white);;
+	background-color: var(--black);
 	height: 7rem;
 	display: grid;
 	align-content: center;
