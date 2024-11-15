@@ -75,10 +75,6 @@ p {
 
 section > h2 {
 	text-align: center;
-    /* position: sticky;
-    top: 6%;
-    z-index: 1;
-    padding: .5rem */
 }
 
 section {
@@ -199,6 +195,10 @@ section {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+/* LIGHT AND DARK MODE */
+
+/* FOOTER */
 footer {
 	color: white;
 }
