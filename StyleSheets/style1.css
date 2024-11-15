@@ -4,20 +4,30 @@
 	font-style: normal;
 }
 
+:root {
+	--transition: background-color 0.5s ease-in-out, color 0.4s ease-in-out;
+	--dark-gray: #181818;
+	--light-gray: #86868B;
+	--black: #000000;
+	--white: #FFFFFF;
+}
+
 nav {
 	display: flex;
 	justify-content: space-evenly;
-	background-color: #181818;
 	padding: 1rem;
 	width: 100vw;
 	position: fixed;
 	left: 0;
 	top: 0;
 	font-weight: 500;
+	background-color: #181818;
+	transition: var(--transition)
 }
 .content-wrapper {
-	background-color: black;
 	padding-bottom: 1rem;
+	background-color: black;
+	transition: var(--transition)
 }
 
 .wrapper-wrapper {
@@ -140,6 +150,7 @@ section {
 	border-radius: 1rem;
 	padding: 1.5rem;
 	background-color: #181818;
+	transition: var(--transition)
 }
 .quote-div {
 	font-weight: 500;
