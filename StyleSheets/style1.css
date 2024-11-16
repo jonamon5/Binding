@@ -345,6 +345,26 @@ footer p {
 	nav {
 		padding: 2rem;
 	}
+	.magic {
+		font-size: 4rem;
+	}
+	.capital, .consumer, .material {
+		font-size: 2.5rem;
+	}
+	section:hover .magic {
+		transform: none;
+	}
+	section:hover .consumer {
+		transform: none;
+	}
+	section:hover .material {
+		font-size: 3rem;
+		transform: none;
+	}
+	section:hover .capital {
+		transform: none;
+	}
+	
 }
 
 /* 600 */
