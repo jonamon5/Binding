@@ -116,7 +116,7 @@ header {
 	/* text-shadow: var(--text-shadow); */
 	text-transform: uppercase;
 	color: var(--orange);
-	width: 80vw;
+	/* width: 80vw; */
 }
 
 .magic-span {
@@ -191,7 +191,11 @@ section {
 }
 .right-article {
 	grid-column: 1;
-	grid-row: 1
+	grid-row: 1;
+}
+
+.blank-div {
+	height: -webkit-fill-available;
 }
 
 /* LEFT CONTAINER */
@@ -215,9 +219,6 @@ section {
 	grid-row: 1
 }
 	
-.blank-div {
-	height: -webkit-fill-available;
-}
 	
 .quote-div-container {
 	text-align: center;
@@ -451,6 +452,9 @@ nav {
 	}
 	p {
 		line-height: 2.5rem;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
 	}
 	.author {
 		font-size: 1.25rem;
