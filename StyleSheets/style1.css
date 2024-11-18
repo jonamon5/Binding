@@ -75,6 +75,8 @@ section > .navbar {
 	background-color: var(--black);
 	transition: var(--transition);
 	font-family: "inter", sans-serif;
+	/* overflow: hidden; */
+	position: relative;
 }
 
 .wrapper-wrapper {
@@ -95,42 +97,44 @@ section > .navbar {
 header {
 	font-weight: 600;
 	font-size: 6rem;
+	margin-top: 6rem;
 	margin-bottom: 3rem;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	/* text-align: center; */
-	height: 110vh;
+	/* height: 40vh; */
 	justify-content: space-evenly;
-	/* z-index: 0; */
 
-	   animation: fadeIn 3s       ease-in-out     0.5s;
+	animation: fadeIn 3s       ease-in-out     0.5s;
 	/* animation: name   duration timing-function delay iteration-count direction fill-mode; */
+}
 
+.header {
+	margin-top: 4rem;
 }
 
 .header > h1 {
 	/* text-shadow: var(--text-shadow); */
 	text-transform: uppercase;
 	color: var(--orange);
+	width: 80vw;
 }
 
 .magic-span {
 	color: var(--white);
 	text-shadow: var(--text-shadow);
+	transition: var(--transition);
 }
 
-.circle {
+/* .circle {
 	height: 500px;
 	width: 500px;
 	background-color: var(--orange);
 	border-radius: 1000px;
 	position: absolute;
-	top: 10%;
     left: 75%;
 	opacity: 50%;
-	/* z-index: -1; */
-}
+	animation: fadeIn 3s       ease-in-out     0.5s;
+} */
 
 .author {
 	font-weight: 300;
@@ -138,10 +142,6 @@ header {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	font-size: 2.5rem;
-}
-
-.down-arrow {
-	font-size: 5rem;
 }
 
  h2 {
@@ -162,11 +162,6 @@ p {
 	margin-bottom: 2rem;
 }
 
-
-section > h2 {
-	/* background-color: transparent; */
-}
-
 section > h2::before {
 	content:"";
 	background-color: #333333;
@@ -175,6 +170,7 @@ section > h2::before {
 
 section {
 	margin-bottom: 1rem;
+	/* overflow: visible; */
 }
 
 /* GRID CONTAINER */
@@ -205,6 +201,7 @@ section {
 	grid-template-rows: auto;
 	gap: 20px;
 }
+
 .side-div-left {
 	grid-column: 1; 
 	display: flex;
@@ -212,6 +209,7 @@ section {
 	height: 100%;
 	gap: 20px;
 }
+
 .left-article {
 	grid-column: 2;
 	grid-row: 1
@@ -243,7 +241,7 @@ section:hover .quote-div {
 }
 
 .magic {
-	font-size: 1rem;
+	font-size: 3rem;
 	font-weight: 800;
 	text-shadow: var(--text-shadow);
 	margin-top: 2rem;
@@ -252,7 +250,7 @@ section:hover .quote-div {
 }
 
 section:hover .magic {
-	transform: scale(3);
+	/* transform: scale(3); */
 }
 
 .modern {
@@ -275,12 +273,12 @@ section:hover .magic {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: 1rem;
+	font-size: 3rem;
 	transition: var(--transform);
 }
 
 section:hover .capital {
-	transform: scale(2.5);
+	/* transform: scale(2.5); */
 }
 
 .consumer {
@@ -288,12 +286,12 @@ section:hover .capital {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: 1rem;
+	font-size: 3rem;
 	transition: var(--transform);
 }
 
 section:hover .consumer {
-	transform: scale(2.5);
+	/* transform: scale(2.5); */
 }
 
 .material {
@@ -301,12 +299,12 @@ section:hover .consumer {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: 1rem;
+	font-size: 3rem;
 	transition: var(--transform);
 }
 
 section:hover .material {
-	transform: scale(2.5);
+	/* transform: scale(2.5); */
 }
 
 .impetus {
@@ -330,7 +328,12 @@ section:hover .material {
     right: 5rem;
     font-size: 3rem;
     cursor: pointer;
+	z-index: 1;
 
+}
+
+.mode-toggle-checkbox:checked ~ .content-wrapper .magic-span {
+    color: var(--black)
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper {
@@ -390,7 +393,7 @@ footer p {
 	section > h2 {
 		text-align: center;
 		position: sticky;
-		top: 9%;
+		top: 13%;
 		z-index: 1;
 		padding: 1rem;
 		backdrop-filter: blur(10px);
@@ -421,22 +424,33 @@ footer p {
 }
 
 /* 600 */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	h1 {
 		font-size: 5rem;
+	}
+}
+
+/* 600 */
+@media (max-width: 600px) {
+	h1 {
+		font-size: 4rem;
 	}
 }
 
 /* 450 */
 @media (max-width: 450px) {
 	h1 {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 	p {
 		line-height: 2rem;
+	}
+	.author {
+		font-size: 1.25rem;
 	}
 	.footer {
 		width: 50vw;
 		text-align: center;
 	}
 }
+
