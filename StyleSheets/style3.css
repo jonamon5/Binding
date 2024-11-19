@@ -51,7 +51,6 @@ body {
 	position: absolute;
     right: 0;
 	opacity: 15%;
-	/* animation: fadeIn 3 ease-in-out 0.5s; */
 	z-index: 1;
 	
 	display: flex;
@@ -322,15 +321,21 @@ article, .blank-div, .quote-div-container {
 
 .magic-quote {
 	color: var(--orange);
-	padding: 5rem 10rem 5rem 10rem;
+	padding: 5rem;
 	width: 100vw;
     margin-left: calc(50% - 50vw);
 	text-transform: uppercase;
 }
 
 blockquote > p {
-	font-size: 3.5rem;
+	font-size: 4rem;
 	line-height: normal;
+	/* font-weight: 900; */
+	text-align: center;
+}
+
+.alone {
+	font-weight: 900;
 }
 
 .inverted-quote {
@@ -511,6 +516,11 @@ footer p {
 	.inverted-quote {
 		font-size: 1.5rem;
 	}
+	.quote-div-large {
+		font-size: 1.5rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
 	
 }
 
@@ -555,9 +565,17 @@ footer p {
 	header {
 		padding-left: 1rem;
 		padding-right: 1rem;
+		margin-bottom: 0;
 	}
 	h1 {
 		font-size: 3rem;
+	}
+	.more-stuff {
+		display: block;
+	}
+	.header .more-stuff {
+		font-size: 1rem;
+		margin-bottom: 1rem;
 	}
 	p {
 		line-height: 2.5rem;
@@ -575,7 +593,7 @@ footer p {
 		text-align: center;
 	}
 	.grid-container, .grid-container-left, .side-div, .side-div-left {
-		gap: 2rem;
+		gap: 20px;
 	}
 	.inverted-quote {
 		font-size: 1.25rem;

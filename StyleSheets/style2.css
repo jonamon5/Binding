@@ -36,19 +36,35 @@ body {
 	margin: auto;
 }
 
-
-.circle {
-	height: 25em;
-	width: 25em;
-	background-color: var(--orange);
-	border-radius: 1000px;
-	position: absolute;
-    left: 70%;
-	top: 1%;
-	opacity: 50%;
-	animation: fadeIn 3 ease-in-out 0.5s;
-	z-index: 1;
+.circle-wrapper {
+	display: grid;
+	width: 50vw;
+	height: auto;
 }
+
+.circle {	
+	width: calc(40vw - 1rem);
+	width: 25em;
+	aspect-ratio: 1/1;
+	
+	border-radius: 1000px;
+	background-color: var(--orange);
+	position: absolute;
+    right: 0;
+	opacity: 15%;
+	z-index: 1;
+	
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	overflow: hidden;
+	padding-top: 6rem;
+}
+
+.number {
+	font-size: 20rem;
+}
+
 
 nav {
 	display: flex;
