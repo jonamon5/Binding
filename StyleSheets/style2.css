@@ -18,13 +18,7 @@
 
 body {
 	font-family: "neue-kabel", sans-serif;
-	/* margin-top: 3rem; */
 	color: var(--white);
-}
-
-.wrapper-wrapper {	
-	max-width: 90%;
-	margin: auto;
 }
 
 .content-wrapper {
@@ -33,7 +27,27 @@ body {
 	transition: var(--transition);
 	font-family: "inter", sans-serif;
 	position: relative;
+	
 	overflow: hidden;
+}
+
+.wrapper-wrapper {	
+	max-width: 90%;
+	margin: auto;
+}
+
+
+.circle {
+	height: 25em;
+	width: 25em;
+	background-color: var(--orange);
+	border-radius: 1000px;
+	position: absolute;
+    left: 70%;
+	top: 1%;
+	opacity: 50%;
+	animation: fadeIn 3 ease-in-out 0.5s;
+	z-index: 1;
 }
 
 nav {
@@ -154,21 +168,6 @@ header {
 	color: var(--white);
 	text-shadow: var(--white-text-shadow);
 	transition: var(--transition);
-}
-
-.circle {
-	height: 25em;
-	width: 25em;
-	/* height: clamp(200px, 30vw, 500px);
-    width: clamp(200px, 30vw, 500px);  */
-	background-color: var(--orange);
-	border-radius: 1000px;
-	position: absolute;
-    left: 70%;
-	/* top: 1%; */
-	opacity: 50%;
-	animation: fadeIn 3s       ease-in-out     0.5s;
-	z-index: 1;
 }
 
 .author {
@@ -450,7 +449,9 @@ footer p {
 		position: sticky;
 		top: 0;
 		z-index: 1;
-		padding: 1rem;
+		/* padding: 1rem; */
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 		backdrop-filter: blur(10px);
 	}
 
@@ -463,6 +464,7 @@ footer p {
 	}
 	.magic-quote {
 		padding: 2rem 5rem 2rem 5rem;
+		padding: 2rem;
 		text-align: center;
 	}
 	blockquote > p {
@@ -481,7 +483,7 @@ footer p {
 		font-size: 5rem;
 	}
 	.header > h2 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	.navbar {
 		gap: 1rem;
@@ -519,7 +521,6 @@ footer p {
 	}
 	p {
 		line-height: 2.5rem;
-		hyphens: auto;
 		overflow-wrap: break-word;
 		word-wrap: break-word;
 	}
@@ -536,9 +537,14 @@ footer p {
 	.grid-container, .grid-container-left, .side-div, .side-div-left {
 		gap: 2rem;
 	}
-	.inverted-quote, blockquote > p {
+	.inverted-quote {
 		font-size: 1.25rem;
 		line-height: 2rem;
+	}
+	blockquote > p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		margin-bottom: 0;
 	}
 	.magic-quote {
 		padding: 2rem;
