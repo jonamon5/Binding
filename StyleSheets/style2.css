@@ -1,7 +1,8 @@
 :root {
 	--transition: background-color 0.5s ease-in-out, color 0.4s ease-in-out;
 	--transform: transform 1s ease-in-out;
-	--text-shadow: 0px 0px 40px var(--white);
+	--white-text-shadow: 0px 0px 40px var(--white);
+	--black-text-shadow: 0px 0px 40px var(--black);
 
 	--dark-gray: #181818;
 	--light-gray: #86868B;
@@ -9,6 +10,7 @@
 	--white: #FFFFFF;
 	--light-grey-box: #e0e0e0;
 	--orange: #FF5918;
+	--orange: #187BCD;
 
 	--p-font: 1.25rem;
 	--p-height: 2.5rem;
@@ -35,8 +37,8 @@ body {
 
 nav {
 	display: flex;
-	justify-content: space-evenly;
-	padding: 1rem;
+	justify-content: space-between;
+	padding: 1% 5% 1% 5%;
 	width: 100vw;
 	position: fixed;
 	left: 0;
@@ -58,13 +60,14 @@ nav > a:nth-child(1) {
 	display: flex;
 	justify-content: space-evenly;
 	gap: 3rem;
-	height:min-content;
+	height: min-content;
 }
 
 .navbar > a {
-	padding: 1rem 2rem 1rem 2rem;
+	/* padding: 1rem 2rem 1rem 2rem; */
+	padding: 10px 20px 10px 20px;
 	border: 2px solid var(--orange);
-	border-radius: 1rem;
+	border-radius: 10px;
 }
 
 section > a {
@@ -123,7 +126,7 @@ header {
 
 .magic-span {
 	color: var(--white);
-	text-shadow: var(--text-shadow);
+	text-shadow: var(--white-text-shadow);
 	transition: var(--transition);
 }
 
@@ -147,7 +150,7 @@ header {
 }
 
  h2 {
-	font-size: 3rem;
+	font-size: 2rem;
 	margin-bottom: 1rem;
 	margin-top: 4rem;
 	font-weight: 600;
@@ -186,7 +189,6 @@ section {
 	height: 100%;
 }
 .left-article-top {
-
 	grid-column: 1;
 	grid-row: 1;
 }
@@ -196,8 +198,8 @@ section {
 	grid-row: 2;
 }
 
-.side-div {
-	grid-column: 2; 
+.side-div-left {
+	grid-column: 1; 
 	grid-row: 1 / -1;
 	display: flex;
 	flex-direction: column;
@@ -235,8 +237,8 @@ article, .blank-div, .quote-div-container {
 	grid-row: 2;
 }
 
-.side-div-left {
-	grid-column: 1; 
+.side-div {
+	grid-column: 2; 
 	grid-row: 1 / -1;
 	display: flex;
 	flex-direction: column;
@@ -247,7 +249,7 @@ article, .blank-div, .quote-div-container {
 /* BLOCKQUOTE */
 
 .magic-quote {
-	background-color: var(--white);
+	/* background-color: var(--white); */
 	color: var(--orange);
 	padding: 5rem 10rem 5rem 10rem;
 	width: 100vw;
@@ -257,6 +259,11 @@ article, .blank-div, .quote-div-container {
 
 blockquote > p {
 	font-size: 3.5rem;
+	line-height: normal;
+}
+
+.inverted-quote {
+	font-size: 2rem;
 	line-height: normal;
 }
 
@@ -276,7 +283,8 @@ blockquote > p {
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper .magic-span {
-    color: var(--black)
+    color: var(--black);
+	text-shadow: var(--black-text-shadow)
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper {
@@ -290,6 +298,10 @@ blockquote > p {
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper .blank-div,
+.mode-toggle-checkbox:checked ~ .content-wrapper .left-article-top,
+.mode-toggle-checkbox:checked ~ .content-wrapper .left-article-bottom,
+.mode-toggle-checkbox:checked ~ .content-wrapper .right-article-top,
+.mode-toggle-checkbox:checked ~ .content-wrapper .right-article-bottom,
 .mode-toggle-checkbox:checked ~ .content-wrapper .quote-div-container {
     background-color: var(--light-grey-box);
     color: var(--black);
