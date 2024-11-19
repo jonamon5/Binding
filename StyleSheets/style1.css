@@ -23,8 +23,8 @@ body {
 
 nav {
 	display: flex;
-	justify-content: space-evenly;
-	padding: 1rem;
+	justify-content: space-between;
+	padding: 1% 5% 1% 5%;
 	width: 100vw;
 	position: fixed;
 	left: 0;
@@ -36,7 +36,6 @@ nav {
 	z-index: 100;
 	align-items: center;
 }
-
 nav > a:nth-child(1) {
 	font-size: 3rem;
 	font-weight: 900;
@@ -50,9 +49,9 @@ nav > a:nth-child(1) {
 }
 
 .navbar > a {
-	padding: 1rem 2rem 1rem 2rem;
+	padding: 10px 20px 10px 20px;
 	border: 2px solid var(--orange);
-	border-radius: 1rem;
+	border-radius: 10px;
 }
 
 section > a {

@@ -111,7 +111,6 @@ header {
 }
 
 .header > h1 {
-	/* text-shadow: var(--text-shadow); */
 	text-transform: uppercase;
 	color: var(--orange);
 	width: 80vw;
@@ -218,6 +217,12 @@ article, .blank-div, .quote-div-container {
 	transition: var(--transition)
 }
 
+.quote-div {
+	color: var(--orange);
+    transition: text-shadow 0.5s ease-in-out;
+	text-shadow: var(--white-text-shadow);
+}
+
 /* RIGHT GRID */
 
 .grid-container-right {
@@ -249,7 +254,6 @@ article, .blank-div, .quote-div-container {
 /* BLOCKQUOTE */
 
 .magic-quote {
-	/* background-color: var(--white); */
 	color: var(--orange);
 	padding: 5rem 10rem 5rem 10rem;
 	width: 100vw;
@@ -265,9 +269,54 @@ blockquote > p {
 .inverted-quote {
 	font-size: 2rem;
 	line-height: normal;
+	color: var(--orange);
+}
+
+.member {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--orange);
+}
+
+.blank-div {
+	display: flex;
+	align-items: center;
+}
+
+/* DETAILS SUMMARY */
+
+summary {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer; 
+}
+
+.expand[open] .arrow {
+	transform: rotate(180deg);
+}
+.arrow {
+	display: flex;
+	transition: transform 0.4s ease;
+	color: white;
+}
+
+summary > span {
+	font-size: 1.5rem;
+}
+
+li {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1rem;
+}
+
+li:nth-child(odd) {
+	color: var(--orange);
 }
 
 /* LIGHT AND DARK MODE */
+
 .mode-toggle-checkbox {
     display: none;
 }
@@ -279,7 +328,6 @@ blockquote > p {
     font-size: 3rem;
     cursor: pointer;
 	z-index: 1;
-
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper .magic-span {
