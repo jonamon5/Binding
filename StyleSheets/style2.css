@@ -136,10 +136,6 @@ header {
 	/* animation: name   duration timing-function delay iteration-count direction fill-mode; */
 }
 
-.header {
-	/* margin-top: 4rem; */
-}
-
 .header > h1 {
 	text-transform: uppercase;
 	color: var(--orange);
@@ -175,7 +171,7 @@ header {
 	color: var(--light-gray);
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
  h2 {
@@ -311,7 +307,7 @@ blockquote > p {
 
 .inverted-quote {
 	font-size: 2rem;
-	line-height: normal;
+	line-height: 3rem;
 	color: var(--orange);
 }
 
@@ -474,6 +470,9 @@ footer p {
 	h1 {
 		font-size: 5rem;
 	}
+	.header > h2 {
+		font-size: 2rem;
+	}
 	.navbar {
 		gap: 1rem;
 	}
@@ -495,20 +494,15 @@ footer p {
 	}
 }
 
-/* 500 */
-@media (max-width: 500px) {
-/* nav {
-	display: flex;
-	flex-direction: column;
-	padding: 1rem;
-} */
-}
-
 
 /* 450 */
 @media (max-width: 450px) {
 	.wrapper-wrapper {
 		max-width: 95%;
+	}
+	header {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 	h1 {
 		font-size: 3rem;
@@ -532,8 +526,9 @@ footer p {
 	.grid-container, .grid-container-left, .side-div, .side-div-left {
 		gap: 2rem;
 	}
-	.inverted-quote, .magic-quote {
-		font-size: 1.5rem;
+	.inverted-quote, blockquote > p {
+		font-size: 1.25rem;
+		line-height: 2rem;
 	}
 	.magic-quote {
 		padding: 2rem;
