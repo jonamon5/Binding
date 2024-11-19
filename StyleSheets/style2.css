@@ -18,7 +18,7 @@
 
 body {
 	font-family: "neue-kabel", sans-serif;
-	margin-top: 3rem;
+	/* margin-top: 3rem; */
 	color: var(--white);
 }
 
@@ -64,7 +64,6 @@ nav > a:nth-child(1) {
 }
 
 .navbar > a {
-	/* padding: 1rem 2rem 1rem 2rem; */
 	padding: 10px 20px 10px 20px;
 	border: 2px solid var(--orange);
 	border-radius: 10px;
@@ -84,6 +83,36 @@ section > .navbar {
 	transition: var(--transition);
 }
 
+.mobile-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: space-between;
+	color: var(--orange);
+	padding: 1rem;
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	background: rgba(128, 128, 128, 0.3);
+	backdrop-filter: blur(5rem);
+	border-radius: 0 0 0 10px;
+}
+
+.mobile-nav ul {
+text-align: end;
+color: var(--white)
+}
+
+.mobile-nav-items li {
+	color: var(--orange)
+}
+
+summary > span {
+	font-weight: 900;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -96,7 +125,8 @@ section > .navbar {
 header {
 	font-weight: 600;
 	font-size: 6rem;
-	margin-top: 6rem;
+	/* margin-top: 6rem; */
+	padding-top: 15%;
 	margin-bottom: 3rem;
 	display: flex;
 	flex-direction: column;
@@ -107,7 +137,7 @@ header {
 }
 
 .header {
-	margin-top: 4rem;
+	/* margin-top: 4rem; */
 }
 
 .header > h1 {
@@ -221,6 +251,19 @@ article, .blank-div, .quote-div-container {
 	color: var(--orange);
     transition: text-shadow 0.5s ease-in-out;
 	text-shadow: var(--white-text-shadow);
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.quote-div-large {
+	color: var(--orange);
+    transition: text-shadow 0.5s ease-in-out;
+	text-shadow: var(--white-text-shadow);
+	text-align: center;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	font-size: 2rem;
+	font-weight: 900;
 }
 
 /* RIGHT GRID */
@@ -277,6 +320,7 @@ blockquote > p {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: var(--orange);
+	margin: 0;
 }
 
 .blank-div {
@@ -311,9 +355,9 @@ li {
 	font-size: 1rem;
 }
 
-li:nth-child(odd) {
+/* li:nth-child(odd) {
 	color: var(--orange);
-}
+} */
 
 /* LIGHT AND DARK MODE */
 
@@ -327,7 +371,7 @@ li:nth-child(odd) {
     right: 5rem;
     font-size: 3rem;
     cursor: pointer;
-	z-index: 1;
+	z-index: 2;
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper .magic-span {
@@ -383,44 +427,44 @@ footer p {
 
 /* SCREEN SMALLER THAN 800PX */
 @media (max-width: 800px) {
-    .grid-container, .grid-container-left {
+    .grid-container-right, .grid-container-left {
         grid-template-columns: 1fr; 
     }
-    .side-div, .side-div-left, .right-article, .left-article {
+    .side-div, .side-div-left, .right-article-top, .right-article-bottom, .left-article-top, .left-article-bottom {
         grid-column: 1; 
     }
+	.side-div, .side-div-left {
+		grid-row: auto;
+	}
 	.blank-div {
 		display: none;
+	}
+	.header > h2 {
+		text-align: left;
+		padding: 0;
+		position: relative;
 	}
 	section > h2 {
 		text-align: center;
 		position: sticky;
-		top: 12.5%;
+		top: 0;
 		z-index: 1;
 		padding: 1rem;
 		backdrop-filter: blur(10px);
 	}
-	nav {
-		padding: 2rem;
-	}
 	.magic {
 		font-size: 4rem;
 	}
-	.capital, .consumer, .material {
-		font-size: 2.5rem;
+	.magic-quote {
+		padding: 2rem 5rem 2rem 5rem;
+		text-align: center;
 	}
-	section:hover .magic {
-		transform: none;
+	blockquote > p {
+		font-size: 2rem;
 	}
-	section:hover .consumer {
-		transform: none;
-	}
-	section:hover .material {
-		font-size: 3rem;
-		transform: none;
-	}
-	section:hover .capital {
-		transform: none;
+	
+	.inverted-quote {
+		font-size: 1.5rem;
 	}
 	
 }
@@ -430,15 +474,8 @@ footer p {
 	h1 {
 		font-size: 5rem;
 	}
-	nav > a:nth-child(1) {
-		font-size: 2rem;
-	}
 	.navbar {
 		gap: 1rem;
-	}
-	.navbar > a {
-		padding: 0.5rem 1rem 0.5rem 1rem;
-		border-radius: 10px;
 	}
 }
 
@@ -450,15 +487,21 @@ footer p {
 	h2 {
 		font-size: 2rem;
 	}
+	nav {
+		display: none;
+	}
+	.mobile-nav {
+		display: flex;
+	}
 }
 
 /* 500 */
 @media (max-width: 500px) {
-nav {
+/* nav {
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
-}
+} */
 }
 
 
@@ -488,6 +531,12 @@ nav {
 	}
 	.grid-container, .grid-container-left, .side-div, .side-div-left {
 		gap: 2rem;
+	}
+	.inverted-quote, .magic-quote {
+		font-size: 1.5rem;
+	}
+	.magic-quote {
+		padding: 2rem;
 	}
 }
 
