@@ -9,7 +9,6 @@
 	--black: #000000;
 	--white: #FFFFFF;
 	--light-grey-box: #e0e0e0;
-	--orange: #FF5918;
 	--orange: #187BCD;
 
 	--p-font: 1.25rem;
@@ -130,6 +129,7 @@ section > .navbar {
 	background: rgba(128, 128, 128, 0.3);
 	backdrop-filter: blur(5rem);
 	border-radius: 0 0 0 10px;
+	text-align: end;
 }
 
 .mobile-nav ul {

@@ -9,11 +9,10 @@
 	--black: #000000;
 	--white: #FFFFFF;
 	--light-grey-box: #e0e0e0;
-	--orange: #FF5918;
 	--orange: #187BCD;
 
 	--p-font: 1.25rem;
-	--p-height: 2.5rem;
+	--p-height: 2rem;
 }
 
 body {
@@ -128,6 +127,7 @@ section > .navbar {
 	background: rgba(128, 128, 128, 0.3);
 	backdrop-filter: blur(5rem);
 	border-radius: 0 0 0 10px;
+	text-align: end;
 }
 
 .mobile-nav ul {
@@ -156,15 +156,12 @@ summary > span {
 header {
 	font-weight: 600;
 	font-size: 6rem;
-	/* margin-top: 6rem; */
 	padding-top: 15%;
 	margin-bottom: 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-
 	animation: fadeIn 3s       ease-in-out     0.5s;
-	/* animation: name   duration timing-function delay iteration-count direction fill-mode; */
 }
 
 .header > h1 {
@@ -192,7 +189,6 @@ header {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	font-size: 2rem;
-	/* text-decoration: underline; */
 }
 
 .author-link {
@@ -204,7 +200,6 @@ header {
 	margin-bottom: 1rem;
 	margin-top: 4rem;
 	font-weight: 600;
-	/* position: sticky; */
  }
 
  h3 {
@@ -225,7 +220,6 @@ section > h2::before {
 
 section {
 	margin-bottom: 1rem;
-	/* overflow: visible; */
 }
 
 /* GRID CONTAINER */
@@ -328,16 +322,6 @@ article, .blank-div, .quote-div-container {
 	gap: 20px;
 }
 
-/* BLOCKQUOTE */
-/* 
-.magic-quote {
-	color: var(--orange);
-	padding: 5rem 10rem 5rem 10rem;
-	width: 100vw;
-    margin-left: calc(50% - 50vw);
-	text-transform: uppercase;
-} */
-
 blockquote > p {
 	font-size: 3.5rem;
 	line-height: normal;
@@ -365,7 +349,7 @@ blockquote > p {
 /* DETAILS SUMMARY */
 
 summary {
-	display: flex;
+	/* display: flex; */
 	justify-content: space-between;
 	cursor: pointer; 
 }
@@ -384,10 +368,6 @@ li {
 	padding-bottom: 1rem;
 	font-size: 1rem;
 }
-
-/* li:nth-child(odd) {
-	color: var(--orange);
-} */
 
 /* LIGHT AND DARK MODE */
 
@@ -479,7 +459,6 @@ footer p {
 		position: sticky;
 		top: 0;
 		z-index: 1;
-		/* padding: 1rem; */
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 		backdrop-filter: blur(10px);

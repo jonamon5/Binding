@@ -13,7 +13,7 @@
 	--orange: #187BCD;
 
 	--p-font: 1.25rem;
-	--p-height: 2.5rem;
+	--p-height: 2rem;
 }
 
 body {
@@ -128,6 +128,7 @@ section > .navbar {
 	background: rgba(128, 128, 128, 0.3);
 	backdrop-filter: blur(5rem);
 	border-radius: 0 0 0 10px;
+	text-align: end;
 }
 
 .mobile-nav ul {
@@ -160,16 +161,13 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-
 	animation: fadeIn 3s       ease-in-out     0.5s;
-	/* animation: name   duration timing-function delay iteration-count direction fill-mode; */
 }
 
 .header > h1 {
 	text-transform: uppercase;
 	color: var(--orange);
 	width: 80vw;
-	/* font-size: 5rem; */
 }
 
 .magic-span {
@@ -210,7 +208,6 @@ header {
 	margin-bottom: 1rem;
 	margin-top: 4rem;
 	font-weight: 600;
-	/* position: sticky; */
  }
 
  h3 {
@@ -333,7 +330,6 @@ article, .blank-div, .quote-div-container {
 blockquote > p {
 	font-size: 4rem;
 	line-height: normal;
-	/* font-weight: 900; */
 	text-align: center;
 }
 
@@ -376,7 +372,7 @@ blockquote > p {
 /* DETAILS SUMMARY */
 
 summary {
-	display: flex;
+	/* display: flex; */
 	justify-content: space-between;
 	cursor: pointer; 
 }
@@ -399,11 +395,6 @@ li {
 	padding-bottom: 1rem;
 	font-size: 1rem;
 }
-
-/* li:nth-child(odd) {
-	color: var(--orange);
-} */
-
 /* LIGHT AND DARK MODE */
 
 .mode-toggle-checkbox {
@@ -494,7 +485,6 @@ footer p {
 		position: sticky;
 		top: 0;
 		z-index: 1;
-		/* padding: 1rem; */
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 		backdrop-filter: blur(10px);
