@@ -35,16 +35,19 @@ body {
 
 header {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	height: 35vh;
+	height: auto;
+	margin-top: 8rem;
 }
 
 h1 {
 	font-weight: 800;
 	font-size: 4rem;
 	line-height: normal;
-	text-shadow: var(--white-text-shadow)
+	text-shadow: var(--white-text-shadow);
+	margin-bottom: 2rem;
 }
 
 h2 {
@@ -149,6 +152,24 @@ summary > span {
 	font-size: 1.5rem;
 }
 
+/* COLOPHON */
+
+.colophon-container {
+	width: 50vw;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
+.colophon p {
+	line-height: normal;
+	margin-bottom: 1rem;
+}
+
+.note {
+	color: var(--light-gray);
+	margin-bottom: 1rem;
+}
 
 /* ARTICLES */
 
@@ -327,6 +348,9 @@ summary > span {
 	.article-title-author .author {
 		font-size: 1.25rem;
 	}
+	.colophon-container {
+		width: 60vw;
+	}
 }
 
 /* 600 */
@@ -355,6 +379,10 @@ summary > span {
 		font-size: 8rem;
 		left: 4rem;
 	}
+	.colophon-container {
+		width: 70vw;
+		
+	}
 }
 
 @media (max-width: 500px) {
@@ -382,6 +410,7 @@ summary > span {
 	}
 	.article-title-author {
 		margin: 0;
+		width: auto;
 	}
 	.article-container:nth-child(1) {
 		transform: rotate(2deg);
@@ -391,5 +420,8 @@ summary > span {
 	}
 	.article-container:nth-child(3) {
 		transform: rotate(2deg);
+	}
+	.colophon-container {
+		width: 90vw;
 	}
 }
