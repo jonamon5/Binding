@@ -141,6 +141,7 @@ color: var(--white)
 
 summary > span {
 	font-weight: 900;
+	font-size: 1.5rem;
 }
 
 @keyframes fadeIn {
@@ -371,10 +372,6 @@ summary {
 	display: flex;
 	transition: transform 0.4s ease;
 	color: white;
-}
-
-summary > span {
-	font-size: 1.5rem;
 }
 
 li {
