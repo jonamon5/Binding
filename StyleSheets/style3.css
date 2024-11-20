@@ -201,6 +201,9 @@ header {
     margin-bottom: 2rem;
     font-size: 2rem;
 }
+.author-link {
+	font-size: 1.5rem;
+}
 
  h2 {
 	font-size: 2rem;
@@ -539,6 +542,9 @@ footer p {
 
 /* 600 */
 @media (max-width: 600px) {
+	header {
+		margin-top: 2rem;
+	}
 	h1 {
 		font-size: 4rem;
 	}
@@ -607,186 +613,7 @@ footer p {
 	.magic-quote {
 		padding: 2rem;
 	}
-}
-
-
-
-
-/* OLD CSS
-html {
-	background-color: #FAF5F5;
-}
-
-body {
-	font-family: "neue-kabel", sans-serif;
-	color: #FF5918;
-}
-.body-content {
-	max-width: 900px;
-	margin: auto;
-	color: black;
-	font-weight: 400;
-	font-style: normal;
-	font-family: "inter", sans-serif;
-}
-
-
-nav {
-	display: flex;
-	justify-content: space-evenly;
-	background-color: white;
-	align-items: center;
-	padding: 1rem;
-	width: 100vw;
-	position: sticky;
-	left: 0;
-	top: 0;
-	font-weight: 500;
-}
-
-nav > a:nth-child(1) {
-	font-size: 3rem;
-	font-weight: 900;
-}
-
-.navbar {
-	display: flex;
-	justify-content: space-evenly;
-	gap: 3rem;
-}
-
-.navbar > a {
-	padding: 1rem 2rem 1rem 2rem;
-	border: 2px solid #FF5918;
-	border-radius: 1rem;
-}
-
-header {
-	margin: 5rem;
-}
-
-h1 {
-	font-size: 3rem;
-	color: #86868B;
-}
-
-.dilemma {
-	font-size: 8rem;
-	font-weight: bold;
-	color: #FF5918;
-	margin-bottom: 1rem;
-	margin-top: 10rem;
-}
-
-
-.subtitle {
-	font-size: 3rem;
-	color: #86868B;
-	font-weight: 100;
-}
-
-
- h2 {
-	font-size: 2rem;
-	margin-bottom: 1rem;
- }
-
-p {
-	font-size: 1.5rem;
-	margin-bottom: 3rem;
-	color: black;
-	line-height: 2.5rem;
-}
-
-section:has(p) {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
-}
-
-.save-world {
-	font-weight: bold;
-	font-size: 2rem;
-	color: #FF5918;
-}
-
-.in-this-book {
-color: #86868B;
-}
-
-.book-title {
-	font-size: 3rem;
-	color: #FF5918;
-	text-transform: uppercase;
-	line-height: normal;
-}
-
-.book-article > p {
-	margin-bottom: 1rem;
-}
-
-.caplan-section, .cities-section, .alone-section {
-	background-color: black;
-	padding: 5rem;
-	width: 100vw;
-	margin-left: calc(50% - 50vw);
-}
-
-.caplan-section p, .alone-section p {
-	color: white;
-}
-
-.caplan-article, .alone-article {
-	max-width: 900px;
-	margin: auto;
-}
-
-.caplan {
-	font-size: 3rem;
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height: normal;
-}
-
-.differently {
-	color: #FF5918;
-	font-weight: normal;
-	font-style: italic;
-}
-
-
-.cities-article > p {
-	color:#FF5918;
-	text-transform: uppercase;
-	font-size: 3rem;
-	line-height: normal;
-}
-.cities-article {
-	max-width: 900px;
-	margin: auto;
-}
-
-
-.alone {
-	font-size: 7rem;
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height: normal;
-}
-
-footer {
-	background-color: black;
-	color: white;
-	padding: 5rem;
-	margin-top: 5rem;
-	height: 5%;
-}
-
-footer p {
-	color: white;
-	margin: 0;
-}
-
-.footer {
-	max-width: 900px;
-	margin: auto;
+	.author-link {
+		font-size: 1rem;
+	}
 }

@@ -41,7 +41,9 @@ body {
 	width: 50vw;
 	height: auto;
 }
-
+.author-link {
+	font-size: 1.5rem;
+}
 .circle {	
 	width: calc(40vw - 1rem);
 	width: 25em;
@@ -508,6 +510,9 @@ footer p {
 
 /* 600 */
 @media (max-width: 600px) {
+	header {
+		margin-top: 2rem;
+	}
 	h1 {
 		font-size: 4rem;
 	}
@@ -564,6 +569,9 @@ footer p {
 	}
 	.magic-quote {
 		padding: 2rem;
+	}
+	.author-link {
+		font-size: 1rem;
 	}
 }
 

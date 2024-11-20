@@ -192,6 +192,11 @@ header {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	font-size: 2rem;
+	/* text-decoration: underline; */
+}
+
+.author-link {
+	font-size: 1.5rem;
 }
 
  h2 {
@@ -517,6 +522,9 @@ footer p {
 
 /* 600 */
 @media (max-width: 600px) {
+	header {
+		margin-top: 2rem;
+	}
 	h1 {
 		font-size: 4rem;
 	}
@@ -572,6 +580,9 @@ footer p {
 		margin-bottom: 0;
 	}
 	.magic-quote {
-		padding: 2rem;
+		padding: 0rem;
+	}
+	.author-link {
+		font-size: 1rem;
 	}
 }
