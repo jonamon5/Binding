@@ -61,7 +61,7 @@ nav {
 	top: 0;
 	font-weight: 500;
 	background-color: var(--black);
-	color: var(--blue);
+	color: var(--white);
 	transition: var(--transition);
 	z-index: 100;
 	align-items: center;
@@ -81,7 +81,7 @@ nav > a:nth-child(1) {
 
 .navbar > a {
 	padding: 10px 20px 10px 20px;
-	border: 2px solid var(--blue);
+	border: 2px solid var(--white);
 	border-radius: 10px;
 }
 
@@ -94,8 +94,8 @@ section > .navbar {
 }
 
 .navbar a:hover {
-	background-color: var(--blue);
-	color: var(--white);
+	background-color: var(--white);
+	color: var(--black);
 	transition: var(--transition);
 }
 
@@ -269,7 +269,7 @@ summary > span {
     font-size: 10rem;
     position: absolute; 
     top: 6rem; 
-	left: 9rem;
+	left: 8rem;
     transform: translate(-50%, -50%); 
     color: white;
     font-weight: bold; 

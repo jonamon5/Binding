@@ -142,10 +142,11 @@ header {
 	font-weight: 600;
 	font-size: 6rem;
 	padding-top: 15%;
+	margin-bottom: 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	animation: fadeIn 3s       ease-in-out     0.5s;
+	animation: var(--animation)
 }
 
 .header > h1 {
@@ -508,6 +509,7 @@ footer p {
 	header {
 		padding-left: 1rem;
 		padding-right: 1rem;
+		margin-bottom: 0;
 	}
 	h1 {
 		font-size: 3rem;

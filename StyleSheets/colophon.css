@@ -1,0 +1,154 @@
+* {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+body {
+	max-width: 90%;
+	margin: auto;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	color: white;
+	background-color: black;
+	font-family: "neue-kabel", sans-serif;
+	color: var(--white);
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: auto;
+	margin-top: 8rem;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 4rem;
+	line-height: normal;
+	text-shadow: var(--white-text-shadow);
+	margin-bottom: 2rem;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	margin-top: 4rem;
+	font-weight: 600;
+}
+
+/* NAV */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 1% 5% 1% 5%;
+	width: 100vw;
+	position: fixed;
+	left: 0;
+	top: 0;
+	font-weight: 500;
+	background-color: var(--black);
+	color: var(--white);
+	transition: var(--transition);
+	z-index: 100;
+	align-items: center;
+}
+
+nav > a:nth-child(1) {
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 3rem;
+	height: min-content;
+}
+
+.navbar > a {
+	padding: 10px 20px 10px 20px;
+	border: 2px solid var(--white);
+	border-radius: 10px;
+}
+
+section > a {
+	margin: 0;
+}
+
+section > .navbar {
+	margin: 0;
+}
+
+.navbar a:hover {
+	background-color: var(--white);
+	color: var(--black);
+	transition: var(--transition);
+}
+
+.mobile-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: space-between;
+	color: var(--blue);
+	padding: 1rem;
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	background: rgba(128, 128, 128, 0.3);
+	backdrop-filter: blur(5rem);
+	border-radius: 0 0 0 10px;
+	text-align: end;
+}
+
+.mobile-nav ul {
+text-align: end;
+color: var(--white)
+}
+
+.mobile-nav-items li {
+	color: var(--blue)
+}
+
+li {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1rem;
+}
+
+summary > span {
+	font-weight: 900;
+	font-size: 1.5rem;
+}
+
+.colophon-container {
+	width: 60vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	margin: auto;
+    font-size: var(--p-font);
+    animation: var(--animation)
+}
+
+.colophon {
+    line-height: var(--line-height);
+	margin-bottom: 1rem;
+}
+
+.note {
+    color: var(--light-gray);
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: start;
+    color: var(--white);
+}
