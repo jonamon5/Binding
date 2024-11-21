@@ -128,7 +128,7 @@ summary > span {
 .colophon-container {
     position: relative;
 	width: 60vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
