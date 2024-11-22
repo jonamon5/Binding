@@ -302,7 +302,7 @@ blockquote > p {
 
 summary {
 	display: flex;
-	justify-content: space-between;
+	justify-content: end;
 	cursor: pointer; 
 }
 
@@ -322,7 +322,7 @@ summary > span {
 li {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 /* LIGHT AND DARK MODE */
