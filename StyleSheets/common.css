@@ -10,10 +10,15 @@
 	--black: #000000;
 	--white: #FFFFFF;
 	--light-grey-box: #e0e0e0;
-	--blue: #187BCD;
-    --orange: #FF5918;
-    --green: #009345;
+	--blue: #3295E7;
+    --orange: #FF530F;
+    --green: #00A84F;
 
 	--p-font: 1.25rem;
 	--line-height: 2rem;
+}
+
+article > p {
+	letter-spacing: 0.1rem;
+	font-weight: 100;
 }

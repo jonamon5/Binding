@@ -83,6 +83,7 @@ nav > a:nth-child(1) {
 	border-radius: 10px;
 }
 
+
 section > a {
 	margin: 0;
 }
@@ -95,6 +96,11 @@ section > .navbar {
 	background-color: var(--blue);
 	color: var(--white);
 	transition: var(--transition);
+}
+
+.navbar a.active {
+	background-color: var(--blue);
+	color: var(--white);
 }
 
 .mobile-nav {

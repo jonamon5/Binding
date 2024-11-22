@@ -9,8 +9,8 @@ body {
 	margin: auto;
 	margin-top: 3rem;
 	margin-bottom: 3rem;
-	color: white;
-	background-color: black;
+	color: var(--white);
+	background-color: var(--black);
 	font-family: "neue-kabel", sans-serif;
 	color: var(--white);
 }
@@ -184,12 +184,13 @@ summary > span {
     flex-direction: column;
     justify-content: center;
 	width: 50%;
+	gap: .5rem;
 }
 
 .advertising, .dilemma, .save-world {
 	font-size: 2.5rem;
 	font-weight: 500;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .advertising {
@@ -207,6 +208,7 @@ summary > span {
 .author {
 	font-size: 1.5rem;
 	margin: 0;
+	font-weight: normal;
 }
 
 .article-container:nth-child(1){

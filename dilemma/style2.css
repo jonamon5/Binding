@@ -98,6 +98,12 @@ section > .navbar {
 	transition: var(--transition);
 }
 
+.navbar a.active {
+	background-color: var(--orange);
+	color: var(--white);
+}
+
+
 .mobile-nav {
 	display: flex;
 	flex-direction: column;
