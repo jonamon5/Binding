@@ -7,7 +7,7 @@ body {
 	padding-bottom: 1rem;
 	background-color: var(--black);
 	transition: var(--transition);
-	font-family: "inter", sans-serif;
+	/* font-family: "inter", sans-serif; */
 	position: relative;
 	
 	overflow: hidden;
@@ -175,10 +175,11 @@ h1 {
 }
 
 .more-stuff {
+	font-size: 2rem;
 	color: var(--light-gray);
 	font-weight: 100;
 	text-transform: none;
-	display: block;
+	/* display: block; */
 }
 
 .plastic-bag {
@@ -209,7 +210,7 @@ h1 {
 
 p {
 	font-size: var(--p-font);
-	line-height: var(--p-height);
+	line-height: var(--line-height);
 	margin-bottom: 2rem;
 }
 

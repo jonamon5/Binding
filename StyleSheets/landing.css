@@ -153,6 +153,12 @@ summary > span {
 	margin-bottom: 5rem;
 }
 
+/* .table {
+	height: 2rem;
+	width: 90vw;
+	background: #663300;
+} */
+
 .article-container {
 	width: 50rem;
 	display: flex;
@@ -190,7 +196,7 @@ summary > span {
 
 .advertising, .dilemma, .save-world {
 	font-size: 2.5rem;
-	font-weight: 500;
+	font-weight: 700;
 	text-transform: capitalize;
 }
 
@@ -436,7 +442,7 @@ footer p {
 
 @media (max-width: 500px) {
 	.article-title-author .advertising, .dilemma, .save-world {
-		font-size: 1.25rem;
+		/* font-size: 1.25rem; */
 	}
 	.article-title-author .author {
 		font-size: 1rem;

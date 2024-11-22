@@ -7,7 +7,7 @@
 	padding-bottom: 1rem;
 	background-color: var(--black);
 	transition: var(--transition);
-	font-family: "inter", sans-serif;
+	/* font-family: "inter", sans-serif; */
 	position: relative;
 	overflow: hidden;
 }
@@ -361,6 +361,12 @@ li {
 .mode-toggle-checkbox:checked ~ .content-wrapper nav {
     background-color: var(--black);
     color: var(--white);
+}
+.mode-toggle-checkbox:checked ~ .content-wrapper .magic-line  {
+    color: var(--black);
+	text-shadow: var(--black-text-shadow);
+
+
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper .blank-div,
