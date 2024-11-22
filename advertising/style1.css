@@ -1,7 +1,7 @@
-body {
+/* body {
 	font-family: "neue-kabel", sans-serif;
 	color: var(--white);
-}
+} */
 
 .content-wrapper {
 	padding-bottom: 1rem;
@@ -184,41 +184,16 @@ header {
 	font-size: 2rem;
 }
 
-.author-link {
-	font-size: 1.5rem;
-}
-
- h2 {
-	font-size: 2rem;
-	margin-bottom: 1rem;
-	margin-top: 4rem;
-	font-weight: 600;
- }
-
- h3 {
-	font-size: 1.5rem;
- }
-
-p {
-	font-size: var(--p-font);
-	line-height: var(--line-height);
-	margin-bottom: 2rem;
-}
-
 section > h2::before {
 	content:"";
 	background-color: #333333;
 	transition: opacity ease-in-out;
 }
 
-section {
-	margin-bottom: 1rem;
-}
-
 /* GRID CONTAINER */
 
 /* LEFT GRID */
-.grid-container-left {
+/* .grid-container-left {
 	display: grid;
 	grid-template-columns: 65% 35%;
 	grid-template-rows: auto auto;
@@ -246,7 +221,9 @@ section {
 
 .blank-div {
 	height: -webkit-fill-available;
-}
+	display: flex;
+	align-items: center;
+} */
 
 article, .blank-div, .quote-div-container {
 	border-radius: 1rem;
@@ -275,9 +252,9 @@ article, .blank-div, .quote-div-container {
 	font-weight: 900;
 }
 
- .magic-quote p  {
+ /* .magic-quote p  {
 	text-shadow: none;
-}
+} */
 
 
 .magic-line {
@@ -289,7 +266,7 @@ article, .blank-div, .quote-div-container {
 
 /* RIGHT GRID */
 
-.grid-container-right {
+/* .grid-container-right {
 	display: grid;
 	grid-template-columns: 35% 65%;
 	grid-template-rows: auto auto;
@@ -318,7 +295,7 @@ article, .blank-div, .quote-div-container {
 blockquote > p {
 	font-size: 3.5rem;
 	line-height: normal;
-}
+} */
 
 .inverted-quote {
 	font-size: 2rem;
@@ -334,15 +311,9 @@ blockquote > p {
 	margin: 0;
 }
 
-.blank-div {
-	display: flex;
-	align-items: center;
-}
-
 /* DETAILS SUMMARY */
 
 summary {
-	/* display: flex; */
 	justify-content: space-between;
 	cursor: pointer; 
 }
