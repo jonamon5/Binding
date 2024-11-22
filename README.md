@@ -1,7 +1,5 @@
 # Binding
 Project 3: Binding
-Designed by Jonathan Chiang
-Typography & Interaction 2024
 
 This collection reflects various perspectives on design’s role in shaping culture and addressing some critical challenges in society. Raymond Williams’ “The Magic of Advertising” argues that advertising has turned ordinary goods into "glamorous signifiers" of wealth and status, while also masking the ugly truth behind the production process.
 
