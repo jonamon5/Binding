@@ -71,12 +71,11 @@ nav > a:nth-child(1) {
 	height: min-content;
 }
 
-.navbar > a {
+.navbar > a, .colophon {
 	padding: 10px 20px 10px 20px;
 	border: 2px solid var(--white);
 	border-radius: 10px;
 }
-
 section > a {
 	margin: 0;
 }
@@ -96,7 +95,7 @@ section > .navbar {
 	flex-direction: column;
 	align-items: end;
 	justify-content: space-between;
-	color: var(--blue);
+	color: var(--white);
 	padding: 1rem;
 	display: none;
 	position: absolute;
@@ -115,7 +114,7 @@ color: var(--white)
 }
 
 .mobile-nav-items li {
-	color: var(--blue)
+	color: var(--white)
 }
 
 li {
@@ -140,12 +139,9 @@ summary > span {
 
 .colophon {
 	line-height: var(--line-height);
+	margin-bottom: 0;
 }
 
-.note {
-	font-size: var(--p-font);
-	margin-bottom: 1rem;
-}
 
 /* ARTICLES */
 
@@ -203,11 +199,11 @@ summary > span {
 }
 
 .dilemma {
-	color: var(--green)
+	color: var(--orange)
 }
 
 .save-world {
-	color: var(--orange)
+	color: var(--green)
 }
 
 .author {
@@ -252,7 +248,7 @@ summary > span {
 	animation-delay: 0s
 }
 .article-container:nth-child(3) {
-	margin-left: -5rem;
+	/* margin-left: -5rem; */
 }
 
 /* SHAPE */
@@ -293,7 +289,7 @@ summary > span {
     position: relative;
     width: 11rem;
     height: 11rem;
-	background-color: var(--green);
+	background-color: var(--orange);
 	border-radius: 1000px;
 	z-index: 1;
 }
@@ -318,7 +314,7 @@ summary > span {
     position: relative;
     width: 12rem;
     height: 12rem;
-	background-color: var(--orange);
+	background-color: var(--green);
 	z-index: 1;
 }
 
@@ -339,8 +335,8 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed; 
-    bottom: 0; 
+	/* position: fixed; 
+    bottom: 0;  */
 }
 
 footer p {
