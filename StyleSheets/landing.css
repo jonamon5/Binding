@@ -154,6 +154,7 @@ summary > span {
 	flex-direction: column;
 	width: fit-content;
 	margin: auto;
+	margin-bottom: 5rem;
 }
 
 .article-container {
@@ -164,10 +165,17 @@ summary > span {
 	background-color: var(--white);
 	border-radius: 10px;
 	text-align: start;
-	margin-bottom: 3rem;
+	margin-bottom: 10px;
 	overflow: hidden;
 	padding-right: 2rem;
-	
+
+	transform-origin: bottom;
+    animation: fall-and-rotate 2s ease-in forwards;
+}
+
+#save-world-article {
+	animation: none;
+	transform: none;
 }
 
 .article-container p {
@@ -208,14 +216,43 @@ summary > span {
 	font-weight: normal;
 }
 
-.article-container:nth-child(1){
-	transform: rotate(1deg);
+/* .article-container:nth-child(1){
+	transform: rotate(6deg);
 }
 .article-container:nth-child(2){
 	transform: rotate(-6deg);
 }
 .article-container:nth-child(3){
-	transform: rotate(1deg);
+	transform: rotate(0deg);
+} */
+
+
+@keyframes fall-and-rotate {
+	0% {
+		transform: rotate(var(--start-angle)) translateY(-500px);
+	}
+	80% {
+		transform: rotate(0deg) translateY(5px);
+	}
+	90% {
+		transform: rotate(0deg) translateY(10px);
+	}
+	100% {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.article-container:nth-child(1) {
+    --start-angle: 2deg;
+	animation-delay: 0.2s;
+}
+.article-container:nth-child(2) {
+    --start-angle: -2deg;
+	margin-left: 4rem;
+	animation-delay: 0s
+}
+.article-container:nth-child(3) {
+	margin-left: -5rem;
 }
 
 /* SHAPE */
@@ -297,9 +334,13 @@ summary > span {
 }
 
 footer {
+	width: 90vw;
+    margin: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: fixed; 
+    bottom: 0; 
 }
 
 footer p {
@@ -307,6 +348,13 @@ footer p {
 	margin: 0;
 }
 
+/* SCREEN SMALLER THAN 950PX */
+@media (max-width: 950px) {
+	.article-container:nth-child(n+1) {
+		margin-left: 0;
+    }
+}
+/* SCREEN SMALLER THAN 850PX */
 @media (max-width: 850px) {
 	.article-container {
         width: 90vw; 
@@ -314,7 +362,6 @@ footer p {
     }
 }
 
-/* SCREEN SMALLER THAN 800PX */
 @media (max-width: 800px) {
     .grid-container-right, .grid-container-left {
         grid-template-columns: 1fr; 
@@ -430,5 +477,9 @@ footer p {
 	}
 	.colophon-container {
 		width: 90vw;
+	}
+	footer {
+		flex-direction: column;
+		text-align: center;
 	}
 }
