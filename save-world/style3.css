@@ -505,6 +505,7 @@ footer p {
 		line-height: var(--line-height);
 		overflow-wrap: break-word;
 		word-wrap: break-word;
+		hyphens: manual;
 	}
 	.more-stuff {
 		display: block;
