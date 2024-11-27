@@ -91,6 +91,8 @@ section {
 
 .blank-div {
 	height: -webkit-fill-available;
+	overflow: hidden;
+	padding: 0rem;
 }
 
 .magic-quote p  {

@@ -231,11 +231,6 @@ article, .blank-div, .quote-div-container {
 	transition: var(--transition)
 }
 
-.blank-div {
-	height: -webkit-fill-available;
-	overflow: hidden;
-	padding: 0rem;
-}
 
 .quote-div {
 	color: var(--orange);

@@ -253,8 +253,14 @@ section {
 	gap: 20px;
 }
 
-.blank-div {
-	height: -webkit-fill-available;
+.small-square {
+	height: 25rem;
+	width: 25rem;
+	background-color: var(--green);
+	opacity: 15%;
+	position: relative;
+	right: 7rem;
+	bottom: 7rem;
 }
 
 article, .blank-div, .quote-div-container {
