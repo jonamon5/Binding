@@ -302,13 +302,17 @@ blockquote > p {
 
 summary {
 	display: flex;
-	justify-content: end;
+	justify-content: space-between;
 	cursor: pointer; 
 }
 
 .expand[open] .arrow {
 	transform: rotate(180deg);
 }
+.expand li {
+	font-size: var(--p-font);
+}
+
 .arrow {
 	display: flex;
 	transition: transform 0.4s ease;
