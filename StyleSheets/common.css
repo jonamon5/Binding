@@ -80,6 +80,15 @@ section {
 	grid-row: 2;
 }
 
+.side-div-left {
+	grid-column: 1; 
+	grid-row: 1 / -1;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	gap: 20px;
+}
+
 .side-div-quote-container {
 	grid-column: 1; 
 	grid-row: 1 / -1;
