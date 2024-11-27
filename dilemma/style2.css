@@ -206,8 +206,15 @@ section > h2::before {
 	gap: 20px;
 }
 
-.blank-div {
-	height: -webkit-fill-available;
+.small-circle {
+	height: 30rem;
+	width: 30rem;
+	border-radius: 100rem;
+	background-color: var(--orange);
+	opacity: 15%;
+	position: relative;
+	left: 7rem;
+	top: 4rem;
 }
 
 article, .blank-div, .quote-div-container {
@@ -216,6 +223,14 @@ article, .blank-div, .quote-div-container {
 	background-color: var(--dark-gray);
 	transition: var(--transition)
 }
+
+.blank-div {
+	height: -webkit-fill-available;
+	overflow: hidden;
+	padding: 0rem;
+	border-radius: 0rem;
+}
+
 
 .quote-div {
 	color: var(--orange);
@@ -293,10 +308,10 @@ blockquote > p {
 	margin: 0;
 }
 
-.blank-div {
+/* .blank-div {
 	display: flex;
 	align-items: center;
-}
+} */
 
 /* DETAILS SUMMARY */
 
