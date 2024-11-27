@@ -52,7 +52,6 @@ p {
 
 
 article > p {
-	/* letter-spacing: 0.1rem; */
 	font-weight: 100;
 }
 
@@ -139,4 +138,15 @@ section {
 blockquote > p {
 	font-size: 3.5rem;
 	line-height: normal;
+}
+
+article, .blank-div, .quote-div-container {
+	border-radius: 1rem;
+	padding: 1.5rem;
+	background-color: var(--dark-gray);
+	transition: var(--transition)
+}
+
+.nowrap {
+	white-space: nowrap;
 }

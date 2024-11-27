@@ -139,7 +139,6 @@ summary > span {
 .colophon-container {
     position: relative;
 	width: 60vw;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +149,6 @@ summary > span {
 
 .colophon {
     line-height: var(--line-height);
-	/* margin-bottom: 1rem; */
 }
 
 .note {
@@ -158,14 +156,13 @@ summary > span {
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: start;
     color: var(--white);
+	hyphens: manual;
+	word-break: keep-all; 
 }
 
-article > p {
-    /* letter-spacing: 2px; */
-}
 
 /* FOOTER */
 footer {
@@ -188,8 +185,7 @@ footer {
 /* 800 */
 @media (max-width: 800px) {
     .colophon-container {
-        width: 80vw;
-        /* height: 100vh; */
+        width: 60vw;
     }
 }
 
@@ -201,6 +197,9 @@ footer {
 	.mobile-nav {
 		display: flex;
 	}
+	.colophon-container {
+        width: 80vw;
+    }
 }
 
 
@@ -215,4 +214,7 @@ footer {
 		width: 50vw;
 		text-align: center;
 	}
+	.colophon-container {
+        width: 90vw;
+    }
 }
