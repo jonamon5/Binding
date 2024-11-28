@@ -153,11 +153,6 @@ summary > span {
 	margin-bottom: 5rem;
 }
 
-/* .table {
-	height: 2rem;
-	width: 90vw;
-	background: #663300;
-} */
 
 .article-container {
 	width: 50rem;
@@ -218,16 +213,6 @@ summary > span {
 	font-weight: normal;
 }
 
-/* .article-container:nth-child(1){
-	transform: rotate(6deg);
-}
-.article-container:nth-child(2){
-	transform: rotate(-6deg);
-}
-.article-container:nth-child(3){
-	transform: rotate(0deg);
-} */
-
 
 @keyframes fall-and-rotate {
 	0% {
@@ -252,9 +237,6 @@ summary > span {
     --start-angle: -2deg;
 	margin-left: 4rem;
 	animation-delay: 0s
-}
-.article-container:nth-child(3) {
-	/* margin-left: -5rem; */
 }
 
 /* SHAPE */
@@ -281,7 +263,7 @@ summary > span {
     top: 8rem; 
 	left: 2rem;
     transform: translate(-50%, -50%); 
-    color: white;
+    color: var(--white);
     font-weight: bold; 
 	text-shadow: var(--white-text-shadow);
 }
@@ -306,7 +288,7 @@ summary > span {
     top: 6rem; 
 	left: 8rem;
     transform: translate(-50%, -50%); 
-    color: white;
+    color: var(--white);
     font-weight: bold; 
 	text-shadow: var(--white-text-shadow);
 }
@@ -330,7 +312,7 @@ summary > span {
     top: 6rem; 
 	left: 9rem;
     transform: translate(-50%, -50%); 
-    color: white;
+    color: var(--white);
     font-weight: bold; 
 	text-shadow: var(--white-text-shadow);
 }
