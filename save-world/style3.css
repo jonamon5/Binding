@@ -59,30 +59,10 @@ nav {
 	align-items: center;
 }
 
-nav > a:nth-child(1) {
-	font-size: 3rem;
-	font-weight: 900;
-}
-
-.navbar {
-	display: flex;
-	justify-content: space-evenly;
-	gap: 3rem;
-	height: min-content;
-}
-
 .navbar > a {
 	padding: 10px 20px 10px 20px;
 	border: 2px solid var(--green);
 	border-radius: 10px;
-}
-
-section > a {
-	margin: 0;
-}
-
-section > .navbar {
-	margin: 0;
 }
 
 .navbar a:hover {
@@ -95,7 +75,6 @@ section > .navbar {
 	background-color: var(--green);
 	color: var(--white);
 }
-
 
 .mobile-nav {
 	display: flex;
@@ -126,15 +105,6 @@ color: var(--white)
 
 summary > span {
 	font-weight: 900;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-		opacity: 1;
-    }
 }
 
 /* HEADER */
@@ -229,7 +199,7 @@ section {
 	background-color: var(--green);
 	opacity: 15%;
 	position: relative;
-	right: 7rem;
+	right: 5rem;
 	bottom: 7rem;
 }
 

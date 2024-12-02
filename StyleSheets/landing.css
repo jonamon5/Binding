@@ -59,29 +59,10 @@ nav {
 	align-items: center;
 }
 
-nav > a:nth-child(1) {
-	font-size: 3rem;
-	font-weight: 900;
-}
-
-.navbar {
-	display: flex;
-	justify-content: space-evenly;
-	gap: 3rem;
-	height: min-content;
-}
-
 .navbar > a, .colophon {
 	padding: 10px 20px 10px 20px;
 	border: 2px solid var(--white);
 	border-radius: 10px;
-}
-section > a {
-	margin: 0;
-}
-
-section > .navbar {
-	margin: 0;
 }
 
 .navbar a:hover {

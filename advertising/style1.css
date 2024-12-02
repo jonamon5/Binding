@@ -59,31 +59,10 @@ nav {
 	align-items: center;
 }
 
-nav > a:nth-child(1) {
-	font-size: 3rem;
-	font-weight: 900;
-}
-
-.navbar {
-	display: flex;
-	justify-content: space-evenly;
-	gap: 3rem;
-	height: min-content;
-}
-
 .navbar > a {
 	padding: 10px 20px 10px 20px;
 	border: 2px solid var(--blue);
 	border-radius: 10px;
-}
-
-
-section > a {
-	margin: 0;
-}
-
-section > .navbar {
-	margin: 0;
 }
 
 .navbar a:hover {
@@ -130,15 +109,6 @@ summary > span {
 }
 
 /* HEADER */
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-		opacity: 1;
-    }
-}
 
 header {
 	font-weight: 600;
@@ -192,10 +162,11 @@ section > h2::before {
     border-left: 20em solid transparent;
     border-right: 20em solid transparent; 
     border-bottom: 23em solid var(--blue); 
+	transform: rotate(180deg);
 	opacity: 15%;
 	position: relative;
-	top: 1rem;
-	right: 10rem;
+	top: -2rem;
+	right: 8rem;
 }
 
 .quote-div {
