@@ -40,7 +40,7 @@
 
 .circle:hover {
 	width: calc(40vw - 1rem);
-	width: 40em;
+	width: 30em;
 	aspect-ratio: 1/1;
 	transition: 1s ease-in-out;
 }
@@ -155,18 +155,20 @@ section > h2::before {
 /* GRID CONTAINER */
 
 .small-circle {
-	height: 35rem;
-	width: 35rem;
+	height: 30rem;
+	width: 30rem;
 	border-radius: 100rem;
 	background-color: var(--orange);
+	transform: rotate(180deg);
 	opacity: 15%;
 	position: relative;
 	left: 10rem;
 	top: 5rem;
+	transition: 1s ease-out;
 }
 
 .small-circle:hover {
-	left: 5rem;
+	transform: scale(1.1);
 	transition: 1s ease-in-out;
 }
 
