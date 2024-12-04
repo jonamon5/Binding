@@ -294,17 +294,15 @@ li {
 	text-shadow: var(--white-text-shadow);
 }
 
-footer {
+.footer {
 	width: 90vw;
     margin: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* position: fixed; 
-    bottom: 0;  */
 }
 
-footer p {
+.footer p {
 	font-size: var(--p-font);
 	margin: 0;
 }
@@ -400,9 +398,6 @@ footer p {
 }
 
 @media (max-width: 500px) {
-	.article-title-author .advertising, .dilemma, .save-world {
-		/* font-size: 1.25rem; */
-	}
 	.article-title-author .author {
 		font-size: 1rem;
 	}
@@ -439,8 +434,9 @@ footer p {
 	.colophon-container {
 		width: 90vw;
 	}
-	footer {
+	.footer {
 		flex-direction: column;
 		text-align: center;
+		width: 50vw;
 	}
 }
