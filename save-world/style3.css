@@ -355,7 +355,7 @@ li {
 footer {
 	color: var(--white);;
 	background-color: var(--black);
-	height: 7rem;
+	height: 10rem;
 	display: grid;
 	align-content: center;
 	justify-content: center;
