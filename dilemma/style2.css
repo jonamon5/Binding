@@ -38,6 +38,13 @@
 	padding-top: 6rem;
 }
 
+.circle:hover {
+	width: calc(40vw - 1rem);
+	width: 40em;
+	aspect-ratio: 1/1;
+	transition: 1s ease-in-out;
+}
+
 .number {
 	font-size: 20rem;
 }
@@ -158,8 +165,13 @@ section > h2::before {
 	top: 5rem;
 }
 
+.small-circle:hover {
+	left: 5rem;
+	transition: 1s ease-in-out;
+}
+
 .quote-div-container {
-	height: -webkit-fill-available;
+	/* height: -webkit-fill-available; */
 	display: flex;
 	justify-content: center;
 	align-items: center;

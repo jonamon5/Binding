@@ -169,6 +169,15 @@ section > h2::before {
 	right: 8rem;
 }
 
+.small-triangle:hover {
+	border-left: 25em solid transparent;
+    border-right: 25em solid transparent; 
+    border-bottom: 28em solid var(--blue); 
+	transition: 1s ease-in-out;
+	top: -2rem;
+	right: 14rem;
+}
+
 .quote-div {
 	color: var(--blue);
     transition: text-shadow 0.5s ease-in-out;

@@ -203,6 +203,13 @@ section {
 	bottom: 7rem;
 }
 
+.small-square:hover {
+	/* height: 30rem;
+	width: 30rem; */
+	right: 0rem;
+	transition: 1s ease-in-out;
+}
+
 .quote-div {
 	color: var(--green);
     transition: text-shadow 0.5s ease-in-out;
