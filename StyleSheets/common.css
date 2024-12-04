@@ -24,11 +24,6 @@ body {
 	color: var(--white);
 }
 
-summary > span {
-	font-weight: 900;
-	font-size: 1.5rem;
-}
-
 .author-link {
 	font-size: 1.5rem;
 }
@@ -183,4 +178,97 @@ article, .blank-div, .quote-div-container {
 
 .nowrap {
 	white-space: nowrap;
+}
+
+/* DETAILS SUMMARY */
+
+summary {
+	justify-content: space-between;
+	cursor: pointer; 
+}
+
+.expand[open] .arrow {
+	transform: rotate(180deg);
+}
+
+summary > span {
+	font-weight: 900;
+	font-size: 1.5rem;
+}
+
+.arrow {
+	display: flex;
+	transition: transform 0.4s ease;
+	color: white;
+}
+
+li {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1rem;
+}
+
+/* LIGHT AND DARK MODE */
+
+.mode-toggle-checkbox {
+    display: none;
+}
+
+.mode-toggle-button {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    font-size: 3rem;
+    cursor: pointer;
+	z-index: 2;
+}
+
+.mode-toggle-checkbox:checked ~ .content-wrapper .magic-span {
+    color: var(--black);
+	text-shadow: var(--black-text-shadow)
+}
+
+.mode-toggle-checkbox:checked ~ .content-wrapper {
+    background-color: var(--white);
+    color: var(--black)
+}
+
+.mode-toggle-checkbox:checked ~ .content-wrapper nav {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.mode-toggle-checkbox:checked ~ .content-wrapper .blank-div,
+.mode-toggle-checkbox:checked ~ .content-wrapper .left-article-top,
+.mode-toggle-checkbox:checked ~ .content-wrapper .left-article-bottom,
+.mode-toggle-checkbox:checked ~ .content-wrapper .right-article-top,
+.mode-toggle-checkbox:checked ~ .content-wrapper .right-article-bottom,
+.mode-toggle-checkbox:checked ~ .content-wrapper .quote-div-container {
+    background-color: var(--light-grey-box);
+    color: var(--black);
+}
+
+.mode-toggle-button::before {
+    content: "☀️";
+	position: absolute;
+	transition: var(--transform)
+}
+
+.mode-toggle-checkbox:checked + .mode-toggle-button::before {
+    content: "🌙";
+	transform: rotate(360deg);
+}
+
+/* FOOTER */
+footer {
+	color: var(--white);;
+	background-color: var(--black);
+	height: 10rem;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+
+footer p {
+	margin: 0;
 }

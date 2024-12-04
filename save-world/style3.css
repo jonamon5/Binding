@@ -289,35 +289,9 @@ blockquote > p {
 	display: block;
 }
 
-/* DETAILS SUMMARY */
-
-summary {
-	/* display: flex; */
-	justify-content: space-between;
-	cursor: pointer; 
-}
-
-.expand[open] .arrow {
-	transform: rotate(180deg);
-}
-.arrow {
-	display: flex;
-	transition: transform 0.4s ease;
-	color: white;
-}
-
-summary > span {
-	font-size: 1.5rem;
-}
-
-li {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	font-size: 1rem;
-}
 /* LIGHT AND DARK MODE */
 
-.mode-toggle-checkbox {
+/* .mode-toggle-checkbox {
     display: none;
 }
 
@@ -353,9 +327,9 @@ li {
 .mode-toggle-checkbox:checked ~ .content-wrapper .quote-div-container {
     background-color: var(--light-grey-box);
     color: var(--black);
-}
+} */
 
-.mode-toggle-button::before {
+/* .mode-toggle-button::before {
     content: "☀️";
 	position: absolute;
 	transition: var(--transform)
@@ -364,10 +338,10 @@ li {
 .mode-toggle-checkbox:checked + .mode-toggle-button::before {
     content: "🌙";
 	transform: rotate(360deg);
-}
+} */
 
 /* FOOTER */
-footer {
+/* footer {
 	color: var(--white);;
 	background-color: var(--black);
 	height: 10rem;
@@ -378,7 +352,7 @@ footer {
 
 footer p {
 	margin: 0;
-}
+} */
 
 
 /* SCREEN SMALLER THAN 800PX */

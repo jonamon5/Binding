@@ -11,8 +11,6 @@ body {
 	margin-bottom: 3rem;
 	color: var(--white);
 	background-color: var(--black);
-	font-family: "neue-kabel", sans-serif;
-	color: var(--white);
 }
 
 
@@ -123,15 +121,10 @@ li {
 	font-size: 1rem;
 }
 
-summary > span {
-	font-weight: 900;
-	font-size: 1.5rem;
-}
 .body-content {
 	position: relative;
     display: flex;
     flex-direction: column;
-    /* gap: 3rem; */
 	position: relative;
 	top: 5rem;
 	flex: 1;
