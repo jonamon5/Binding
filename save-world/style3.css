@@ -59,7 +59,7 @@ nav {
 	left: 0;
 	top: 0;
 	font-weight: 500;
-	background-color: var(--white);
+	background-color: var(--black);
 	color: var(--green);
 	transition: var(--transition);
 	z-index: 100;
@@ -70,6 +70,7 @@ nav {
 	padding: 10px 20px 10px 20px;
 	border: 2px solid var(--green);
 	border-radius: 10px;
+	color: var(--green);
 }
 
 .navbar a:hover {
@@ -149,7 +150,7 @@ h1 {
 	margin-top: 0;
 }
 
-.more-stuff {
+#more-stuff {
 	font-size: 2rem;
 	color: var(--light-gray);
 	font-weight: 100;
@@ -435,7 +436,7 @@ footer p {
 	h2 {
 		font-size: 2rem;
 	}
-	.header .more-stuff {
+	.header #more-stuff {
 		font-size: 1.25rem;
 	}
 	nav {
@@ -466,10 +467,10 @@ footer p {
 		word-wrap: break-word;
 		hyphens: manual;
 	}
-	.more-stuff {
+	#more-stuff {
 		display: block;
 	}
-	.header .more-stuff {
+	.header #more-stuff {
 		margin-bottom: 1rem;
 	}
 	.author {

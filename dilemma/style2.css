@@ -60,7 +60,7 @@ nav {
 	left: 0;
 	top: 0;
 	font-weight: 500;
-	background-color: var(--white);
+	background-color: var(--black);
 	color: var(--orange);
 	transition: var(--transition);
 	z-index: 100;
@@ -71,6 +71,7 @@ nav {
 	padding: 10px 20px 10px 20px;
 	border: 2px solid var(--orange);
 	border-radius: 10px;
+	color: var(--orange);
 }
 
 .navbar a:hover {

@@ -116,7 +116,14 @@ li {
 
 .colophon {
 	line-height: var(--line-height);
-	margin-bottom: 0;
+	margin-bottom: 0;	
+	transition: var(--transition);
+}
+
+.colophon:hover {
+	background-color: var(--white);
+	color: var(--black);
+	transition: var(--transition);
 }
 
 

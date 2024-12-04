@@ -234,8 +234,7 @@ li {
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper nav {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--white);
 }
 
 .mode-toggle-checkbox:checked ~ .content-wrapper .blank-div,
@@ -271,4 +270,11 @@ footer {
 
 footer p {
 	margin: 0;
+}
+
+@media (min-width: 2000px) {
+	.wrapper-wrapper {
+		max-width: 75%;
+		margin: auto;
+	}
 }
