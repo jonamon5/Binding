@@ -225,6 +225,7 @@ section > h2::before {
 /* DETAILS SUMMARY */
 
 summary {
+	/* display: flex; */
 	justify-content: space-between;
 	cursor: pointer; 
 }

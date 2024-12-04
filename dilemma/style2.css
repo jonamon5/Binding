@@ -230,7 +230,7 @@ blockquote > p {
 /* DETAILS SUMMARY */
 
 summary {
-	display: flex;
+	/* display: flex; */
 	justify-content: space-between;
 	cursor: pointer; 
 }
