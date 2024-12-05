@@ -154,6 +154,11 @@ li {
     animation: fall-and-rotate 2s ease-in forwards;
 }
 
+.article-container:hover {
+	background-color: var(--light-grey-box);
+
+}
+
 #save-world-article {
 	animation: none;
 	transform: none;
