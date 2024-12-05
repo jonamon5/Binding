@@ -252,6 +252,7 @@ blockquote > p {
 	font-size: 4rem;
 	line-height: normal;
 	text-align: center;
+	font-weight: 900;
 }
 
 .alone {
