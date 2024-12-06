@@ -167,12 +167,12 @@ section > h2::before {
 	opacity: 15%;
 	position: relative;
 	left: 10rem;
-	top: 5rem;
+	top: -10rem;
 	transition: 1s ease-out;
 }
 
 .small-circle:hover {
-	transform: scale(1.1);
+	transform: scale(1.5);
 	transition: 1s ease-in-out;
 }
 
