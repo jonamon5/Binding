@@ -74,6 +74,10 @@ nav {
 	color: var(--orange);
 }
 
+.navbar a {
+	transition: var(--transition);
+}
+
 .navbar a:hover {
 	background-color: var(--orange);
 	color: var(--white);
@@ -159,20 +163,21 @@ section > h2::before {
 /* GRID CONTAINER */
 
 .small-circle {
-	height: 30rem;
-	width: 30rem;
+	height: 20rem;
+	width: 20rem;
 	border-radius: 100rem;
 	background-color: var(--orange);
 	transform: rotate(180deg);
 	opacity: 15%;
 	position: relative;
 	left: 10rem;
-	top: -10rem;
+	/* top: -10rem; */
+	bottom: -10rem;
 	transition: 1s ease-out;
 }
 
 .small-circle:hover {
-	transform: scale(1.5);
+	transform: scale(2);
 	transition: 1s ease-in-out;
 }
 
@@ -239,71 +244,6 @@ blockquote > p {
 .collectively-summary, .individually-summary {
 	display: flex;
 }
-
-/* LIGHT AND DARK MODE */
-
-/* .mode-toggle-checkbox {
-    display: none;
-}
-
-.mode-toggle-button {
-    position: fixed;
-    bottom: 5rem;
-    right: 5rem;
-    font-size: 3rem;
-    cursor: pointer;
-	z-index: 2;
-}
-
-.mode-toggle-checkbox:checked ~ .content-wrapper .magic-span {
-    color: var(--black);
-	text-shadow: var(--black-text-shadow)
-}
-
-.mode-toggle-checkbox:checked ~ .content-wrapper {
-    background-color: var(--white);
-    color: var(--black)
-}
-
-.mode-toggle-checkbox:checked ~ .content-wrapper nav {
-    background-color: var(--black);
-    color: var(--white);
-}
-
-.mode-toggle-checkbox:checked ~ .content-wrapper .blank-div,
-.mode-toggle-checkbox:checked ~ .content-wrapper .left-article-top,
-.mode-toggle-checkbox:checked ~ .content-wrapper .left-article-bottom,
-.mode-toggle-checkbox:checked ~ .content-wrapper .right-article-top,
-.mode-toggle-checkbox:checked ~ .content-wrapper .right-article-bottom,
-.mode-toggle-checkbox:checked ~ .content-wrapper .quote-div-container {
-    background-color: var(--light-grey-box);
-    color: var(--black);
-} */
-
-/* .mode-toggle-button::before {
-    content: "☀️";
-	position: absolute;
-	transition: var(--transform)
-}
-
-.mode-toggle-checkbox:checked + .mode-toggle-button::before {
-    content: "🌙";
-	transform: rotate(360deg);
-} */
-
-/* FOOTER */
-/* footer {
-	color: var(--white);;
-	background-color: var(--black);
-	height: 10rem;
-	display: grid;
-	align-content: center;
-	justify-content: center;
-}
-
-footer p {
-	margin: 0;
-} */
 
 
 /* SCREEN SMALLER THAN 800PX */

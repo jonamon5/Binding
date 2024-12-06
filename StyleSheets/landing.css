@@ -65,6 +65,10 @@ nav {
 	border-radius: 10px;
 }
 
+.navbar a {
+	transition: var(--transition);
+}
+
 .navbar a:hover {
 	background-color: var(--white);
 	color: var(--black);
@@ -151,12 +155,39 @@ li {
 	padding-right: 2rem;
 
 	transform-origin: bottom;
+	transition: var(--transition);
     animation: fall-and-rotate 2s ease-in forwards;
 }
 
-.article-container:hover {
-	background-color: var(--light-grey-box);
+.article-container:nth-child(1):hover {
+	background-color: var(--blue);
+	color: var(--blue);
+	opacity: 99%;
+	transition: var(--transition);
+	
+	p.advertising, p.author {
+		color: var(--white)
+	}
+}
 
+.article-container:nth-child(2):hover {
+	background-color: var(--orange);
+	opacity: 99%;
+	transition: var(--transition);
+	
+	p.dilemma, p.author {
+		color: var(--white)
+	}
+}
+
+.article-container:nth-child(3):hover {
+	background-color: var(--green);
+	opacity: 99%;
+	transition: var(--transition);
+	
+	p.save-world, p.author {
+		color: var(--white)
+	}
 }
 
 #save-world-article {

@@ -271,10 +271,3 @@ footer {
 footer p {
 	margin: 0;
 }
-
-@media (min-width: 2000px) {
-	.wrapper-wrapper {
-		max-width: 75%;
-		margin: auto;
-	}
-}
